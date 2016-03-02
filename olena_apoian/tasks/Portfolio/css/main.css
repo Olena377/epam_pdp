@@ -7,7 +7,7 @@
     padding: 0;
 }
 body {
-    min-width: 480px;
+    min-width: 720px;
     position: relative;
     font: 10px 'Raleway', sans-serif;
     color:  #3e3e3e;;
@@ -32,7 +32,12 @@ img {
     width: 100%;
     height: auto;
 }
-
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+    overflow: hidden;
+}
 .burger-btn {
     position: absolute;
     top: 2rem;
@@ -524,7 +529,7 @@ img {
 .single-content {
     width: 80%;
     margin: 0 auto;
-    padding: 0 5rem 5rem;
+    padding: 0 5rem;
 }
 .single-picture {
 	width: 100%;
@@ -534,6 +539,95 @@ img {
 .single-descr {
     padding: 4em 2em;
     background: #3f5058;
+}
+.content-bg{
+    font-size: 1.6em;
+    font-weight: 400;
+    background: url(../img/single-bg.png) no-repeat right center;
+}
+
+.block-60 {
+    width: 60%;
+    margin-bottom: 8em;
+}
+.block-50 {
+    width: 50%;
+    margin-bottom: 3em;
+}
+.block-70 {
+    width: 70%;
+    margin-top: 7em;
+}
+.comment-photo {
+    float: left;
+}
+.comment {
+    margin-bottom: 2em;
+}
+.comment span {
+    font-size: 18px;
+    font-weight: 500;
+}
+.comment-description {
+    margin-top: 1em;
+}
+.comments {
+    font-size: 1.6em;
+    font-weight: 400;
+}
+.comment-btn-wrapper {
+    width: 25%;
+    min-width: 140px;
+    text-align: center;
+}
+.comment-btn{
+    display: block;
+    padding: 1rem 0.5rem;
+    font-size: 18px;
+    background: #333;
+    color: #fff;
+}
+.comments-wrapper {
+    position: relative;
+    margin: 2em 0;
+}
+.comment-photo {
+    width: 75px;
+    height: 75px;
+    margin-right: 3%;
+}
+.reply {
+    position: absolute;
+    left: 13%;
+}
+.reply-header {
+    margin-left: 4%;
+    margin-bottom: .5em;
+    font-weight: 500;
+}
+.content form {
+    width: 50%;
+    margin-top: 11rem;
+}
+.content textarea,
+.content input {
+    margin-bottom: .5em;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 32px;
+}
+.content textarea,
+.content input,
+.content button {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+}
+.content textarea {
+    height: 150px;
+}
+.conten-no-padding {
+    padding-bottom: 0;
 }
 /*** MEDIA ***/
 
