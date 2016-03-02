@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <meta http-equiv="x-ua-compatible" content="IE=Edge"/>
+  <meta name="viewport" content="width=device-width, initial scale=1.0"/>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/reset.css"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+<div class="wrapper">
+  <header id="header">
+    <div class="wrapper-content">
+      <div id="btnMenu"></div>
+      <h1>Lets Make Something Great</h1>
+      <p class="description">I’m an UI designer that prides ourself on being strategic brand partners and </p>
+      <p class="description"> awesome product providers</p>
+      <button class="btn btn-big">Hire me</button>
+
+    </div>
+
+  </header>
+  <aside id="sidebar">
+    <div class="person-block">
+      <h2 class="name">Al Rayhan</h2>
+      <p>UI/UX Expert</p>
+      <span id="btnClose">&times</span>
+    </div>
+    <nav>
+      <ul class="menu-list">
+        <li class="menu-item">Home</li>
+        <li class="menu-item">About Me</li>
+        <li class="menu-item">Education</li>
+        <li class="menu-item">Work Experience</li>
+        <li class="menu-item">Skills</li>
+        <li class="menu-item">Portfolio</li>
+        <li class="menu-item">Contacts</li>
+      </ul>
+    </nav>
+  </aside>
+  <div class="content">
+    <section class="info portfolio">
+      <div class="wrapper-content">
+
+          <h2 class="title">Portfolio</h2>
+          <ul class="navigate-list">
+            <li class="navigate-item">Branding</li>
+            <li class="navigate-item">Web Design</li>
+            <li class="navigate-item">Animation</li>
+            <li class="navigate-item">UI/UX</li>
+          </ul>
+          <div class="line">
+            <div class="red-line"></div>
+          </div>
+          <ul class="project-list">
+            <li class="project-item">
+              <figure>
+                <img src="image/project5.png" alt="project5" class="img-project">
+                <figcaption class="description-project">
+                  <h3>Music Player Design</h3>
+                  <p>Branding UI/UX Article</p>
+                  <a href="project.html" class="link-project">View Project &gt; </a>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="project-item">
+              <figure>
+                <img src="image/project5.png" alt="project5" class="img-project">
+                <figcaption class="description-project">
+                  <h3>Music Player Design</h3>
+                  <p>Branding UI/UX Article</p>
+                  <a href="project.html" class="link-project">View Project &gt; </a>
+                </figcaption>
+              </figure>
+            </li>
+
+          </ul>
+      </div>
+    </section>
+
+  </div>
+  <footer id="footer">
+    <div class="wrapper-content">
+      <form action="#" method="get" class="form">
+        <h3 class="title-message">Leave a Message</h3>
+        <textarea placeholder="Message*" class="input-message" required></textarea>
+        <input type="text" placeholder="Name*" class="input-info" required>
+        <input type="email" placeholder="Email*" class="input-info" required>
+        <input type="text" placeholder="Subject*" class="input-info" required>
+        <button class="btn btn-small">Hire Me!</button>
+
+      </form>
+      <div class="address">
+        <ul class="address-list">
+          <li class="address-item">
+            <span class="icon icon-home"></span>
+            <div class="wrapper-info">
+              <h3>Location</h3>
+              <p>324, Golden Tower, Amborkhana, Sylhet</p>
+            </div>
+          </li>
+          <li class="address-item">
+            <span class="icon icon-email"></span>
+            <div class="wrapper-info">
+              <h3>Email</h3>
+              <p>junaed@deviserweb.com</p>
+            </div>
+          </li>
+          <li class="address-item">
+            <span class="icon icon-phone"></span>
+            <div class="wrapper-info">
+              <h3>Toll Free Call</h3>
+              <p>008 123 456 98</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    <ul class="social-list">
+      <li class="social-item">
+        <i class="icon icon-twitter active"></i>
+      </li>
+      <li class="social-item">
+        <i class="icon icon-skype"></i>
+      </li>
+      <li class="social-item">
+        <i class="icon icon-dribbble"></i>
+      </li>
+    </ul>
+    <p class="copyright clearfix">Copyright: Junaed Ahmed, All rights reserved</p>
+    </div>
+  </footer>
+</div>
+<script>
+  var menuBtn = document.getElementById('btnMenu');
+  var sideBar = document.getElementById('sidebar');
+  var closeBtn = document.getElementById('btnClose');
+
+  menuBtn.addEventListener('click', function(){
+    sideBar.style.left = '0';
+  });
+
+  closeBtn.addEventListener('click', function(){
+    sideBar.style.left = '-275px';
+  })
+</script>
+</body>
+</html>
