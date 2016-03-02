@@ -55,7 +55,10 @@ img {
     background: #fb6470;
     box-shadow: 0 0.55em 0 0 #fb6470, 0 1.1em 0 0 #fb6470;
 }
-
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
 /*** SIDEBAR ***/
 
 .close-btn {
