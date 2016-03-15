@@ -1,23 +1,20 @@
 /* Tiny Carousel */
 #slider1,
 #slider2 {
-    margin: 30px 0 0;
     overflow: hidden;
     position: relative;
 }
 
 #slider1 .viewport,
 #slider2 .viewport {
-    margin-right: 15rem;
-    height: 435px;
-    overflow: hidden;
     position: relative;
+    height: 796px;
+    overflow: hidden;
 }
 
 #slider1 .buttons,
 #slider2 .buttons {
-    position: absolute;
-    top: 50%;
+    display: none;
 }
 
 #slider1 .next,
@@ -51,3 +48,18 @@
 #slider2 .overview li {
     float: left;
  }
+
+@media (min-width: 900px) {
+
+    #slider1 .viewport,
+    #slider2 .viewport {
+        margin-right: 15rem;
+        height: 435px;
+    }
+    #slider1 .buttons,
+    #slider2 .buttons {
+        display: block;
+        position: absolute;
+        top: 50%;
+    }
+}
