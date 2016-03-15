@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Painter</title>
+    <meta http-equiv="x-ua-compatible" content="IE=Edge"/>
+    <meta name="viewport" content="width=device-width, initial scale=1.0"/>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/fonts.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <style>
+    #slides {
+      display: none
+    }
+    .container {
+      margin: 0 auto;
+    }
+
+    @media (min-width: 768px) and (max-width: 979px) {
+     .container {
+        width: 40%;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .container {
+         width: 40%;
+      }
+    }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header"  data-type="background" data-speed="10">
+        <h1 class="logo logo-header">Paint your pixture</h1>
+        <span id="burgerBtn"></span>
+        <div class="header-description-title">
+            <h3 class="header-title">Humble Beginings</h3>
+            <p class="header-description">Lorem Lorem ipsum dolor sit amet. consectetur adipisicing elit. sed do eiusmod tempor incididut ut labore et dolore magna aliqu.</p>
+
+            <div class="more">
+                <span class="dot dot-more"></span>
+                <span class="dot dot-more"></span>
+                <span class="dot dot-more"></span>
+            </div>
+        </div>
+        <div class="aside-link-block">
+            <!--content: '&lt;'-->
+            <div class="inside">
+                <a href="#" class="vertical link">paint the power<span class="author">blsa rovar</span></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <aside id="sidebar">
+            <ul class="sidebar-list">
+                <li class="sidebar-item"><a href="#" class="link"><i class="icon icon-user"></i><span class="item-menu">Home</span></a></li>
+                <li class="sidebar-item"><a href="#" class="link"><i class="icon icon-spread"></i><span class="item-menu">Home</span></a></li>
+                <li class="sidebar-item"><a href="#" class="link"><i class="icon icon-spread"></i><span class="item-menu">Home</span></a></li>
+                <li class="sidebar-item"><a href="#" class="link"><i class="icon icon-train"></i><span class="item-menu">Home</span></a></li>
+            </ul>
+        </aside>
+        <section>
+            <div class="wrapper-slider">
+                <h3 class="little-title">Pictires worth seeing</h3>
+                <div class="container">
+                    <ul class="slider" id="slides">
+                        <li class="slider-item">
+                            <div class="wrapper-img">
+                                <img src="images/card2.png" alt="picture" class="slide-img">
+                                <span class="like"><i class="icon-heart"></i><i>382</i></span>
+                            </div>
+                            <div class="bottom-side">
+                                <header>Bliss Texture</header>
+
+                                <p class="slider-description">Lorem ipsum dolor sit amet. consectetur adipisicing elit. sed do eiusmod tempor incididut ut labore et dolore magna aliqu.</p>
+                                <footer class="footer-slider">
+                                    <div class="dots">
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                    <div class="comments">
+                                        <i class="icon icon-comment"></i><span class="count-link">375</span><span>comments</span>
+                                    </div>
+
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="slider-item">
+                            <div class="wrapper-img">
+                                <img src="images/card2.png" alt="picture" class="slide-img">
+                                <span class="like"><i class="icon-heart"></i><i>382</i></span>
+                            </div>
+                            <div class="bottom-side">
+                                <header>Bliss Texture</header>
+
+                                <p class="slider-description">Lorem ipsum dolor sit amet. consectetur adipisicing elit. sed do eiusmod tempor incididut ut labore et dolore magna aliqu.</p>
+                                <footer class="footer-slider">
+                                    <div class="dots">
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                    <div class="comments">
+                                        <i class="icon icon-comment"></i><span class="count-link">375</span><span>comments</span>
+                                    </div>
+
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="slider-item">
+                            <div class="wrapper-img">
+                                <img src="images/card2.png" alt="picture" class="slide-img">
+                                <span class="like"><i class="icon-heart"></i><i>382</i></span>
+                            </div>
+                            <div class="bottom-side">
+                                <header>Bliss Texture</header>
+
+                                <p class="slider-description">Lorem ipsum dolor sit amet. consectetur adipisicing elit. sed do eiusmod tempor incididut ut labore et dolore magna aliqu.</p>
+                                <footer class="footer-slider">
+                                    <div class="dots">
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                    <div class="comments">
+                                        <i class="icon icon-comment"></i><span class="count-link">375</span><span>comments</span>
+                                    </div>
+
+                                </footer>
+                            </div>
+                        </li>
+                        <a href="#" class="slidesjs-next slidesjs-navigation bracket"><i class="icon-chevron-right icon-large"> &lt; </i></a>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="banner2">
+            <div class="aside-link-block">
+                <div class="inside">
+                    <a href="#" class="vertical link author-link">paint the power<span class="author">blsa rovar</span></a>
+                </div>
+            </div>
+            <div class="wrapper-content">
+                <div class="logo"></div>
+            </div>
+            <div class="header-description-title banner2-description">
+                <h3 class="header-title">Texture makes art</h3>
+                <p class="header-description">Lorem ipsum dolor sit amet. consectetur adipisicing elit. sed do eiusmod tempo Lorem ipsum dolor sit amet. consectetur adipisicing elit. sed do eiusmod tempo</p>
+                <div class="more">
+                    <span class="dot dot-more"></span>
+                    <span class="dot dot-more"></span>
+                    <span class="dot dot-more"></span>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="aside-link-block">
+                <div class="inside inside-date">
+                    <a href="#" class="vertical link ">24th<span class="author">january</span></a>
+                </div>
+            </div>
+            <div class="wrapper-content">
+                <div class="text-info-block">
+                    <p class="text-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                    <p class="text-info">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                        homes → </p>
+                    <p class="text-info">dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                </div>
+            </div>
+        </section>
+        <section class="slider-desktop">
+            <div class="wrapper-slider">
+                <h3 class="little-title">Pictires worth seeing</h3>
+                <div class="container">
+                    <ul class="slider" id="slides2">
+                        <li class="slider-item">
+                            <div class="wrapper-img">
+                                <img src="images/card2.png" alt="picture" class="slide-img">
+                                <span class="like"><i class="icon-heart"></i><i>382</i></span>
+                            </div>
+                            <div class="bottom-side">
+                                <header>Bliss Texture</header>
+
+                                <p class="slider-description">Lorem ipsum dolor sit amet. consectetur adipisicing elit. sed do eiusmod tempor incididut ut labore et dolore magna aliqu.</p>
+                                <footer class="footer-slider">
+                                    <div class="dots">
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                    <div class="comments">
+                                        <i class="icon icon-comment"></i><span class="count-link">375</span><span>comments</span>
+                                    </div>
+
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="slider-item">
+                            <div class="wrapper-img">
+                                <img src="images/card2.png" alt="picture" class="slide-img">
+                                <span class="like"><i class="icon-heart"></i><i>382</i></span>
+                            </div>
+                            <div class="bottom-side">
+                                <header>Bliss Texture</header>
+
+                                <p class="slider-description">Lorem ipsum dolor sit amet. consectetur adipisicing elit. sed do eiusmod tempor incididut ut labore et dolore magna aliqu.</p>
+                                <footer class="footer-slider">
+                                    <div class="dots">
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                    <div class="comments">
+                                        <i class="icon icon-comment"></i><span class="count-link">375</span><span>comments</span>
+                                    </div>
+
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="slider-item">
+                            <div class="wrapper-img">
+                                <img src="images/card2.png" alt="picture" class="slide-img">
+                                <span class="like"><i class="icon-heart"></i><i>382</i></span>
+                            </div>
+                            <div class="bottom-side">
+                                <header>Bliss Texture</header>
+
+                                <p class="slider-description">Lorem ipsum dolor sit amet. consectetur adipisicing elit. sed do eiusmod tempor incididut ut labore et dolore magna aliqu.</p>
+                                <footer class="footer-slider">
+                                    <div class="dots">
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                    <div class="comments">
+                                        <i class="icon icon-comment"></i><span class="count-link">375</span><span>comments</span>
+                                    </div>
+
+                                </footer>
+                            </div>
+                        </li>
+                        <a href="#" class="slidesjs-next slidesjs-navigation bracket"><i class="icon-chevron-right icon-large"> &lt; </i></a>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="aside-link-block">
+                <div class="inside inside-date">
+                    <a href="#" class="vertical link ">24th<span class="author">january</span></a>
+                </div>
+            </div>
+            <div class="wrapper-content">
+                <ul class="article-list">
+                    <li class="article-item">
+                        <h3 class="title">Start-Up Resources</h3>
+                        <p>Lorem ipsum dolor sit amet. consectetur adipisicing elit. sed do eiusmod tempo Lorem ipsum dolor sit amet. consectetur adipisicing el</p>
+                    </li>
+                    <li class="article-item">
+                        <h3 class="title">Start-Up Resources</h3>
+                        <p>Lorem ipsum dolor sit amet. consectetur adipisicing elit. sed do eiusmod tempo Lorem ipsum dolor sit amet. consectetur adipisicing el</p>
+                    </li>
+                    <li class="article-item">
+                        <h3 class="title">Start-Up Resources</h3>
+                        <p>Lorem ipsum dolor sit amet. consectetur adipisicing elit. sed do eiusmod tempo Lorem ipsum dolor sit amet. consectetur adipisicing el</p>
+                    </li>
+                    <li class="article-item">
+                        <h3 class="title">Start-Up Resources</h3>
+                        <p>Lorem ipsum dolor sit amet. consectetur adipisicing elit. sed do eiusmod tempo Lorem ipsum dolor sit amet. consectetur adipisicing el</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="author-banner">
+            <div class="wrapper-content">
+                <div class="wrapper-author-info">
+                    <h3 class="info-by">Textures by</h3>
+                    <h2 class="title-author">Jordat Hetzer</h2>
+                    <p>Lorem ipsum dolor sit amet. consectetur adipisicing elit. sed do eiusmod tempo Lorem ipsum dolor sit amet. consectetur adipisicing el</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="wrapper-content">
+            <div class="wrapper-info-footer">
+                <ul class="footer-info-list">
+                    <li class="footer-info-item">
+                        <h3 class="footer-title">About</h3>
+                        <p class="footer-description">Lorem ipsum dolor sit amet. consectetur adipisicing elit. sed do eiusmod tempo Lorem ipsum dolor sit amet. consectetur adipisicing el</p>
+                    </li>
+                    <li class="footer-info-item">
+                        <h3 class="footer-title">History</h3>
+                        <ul class="history-list">
+                            <li class="history-item"><a href="#" class="link">Resouces</a> </li>
+                            <li class="history-item"><a href="#" class="link">Downloads& Updates</a> </li>
+                            <li class="history-item"><a href="#" class="link">Manuals</a> </li>
+                            <li class="history-item"><a href="#" class="link">Tech Specs</a> </li>
+                            <li class="history-item"><a href="#"class="link">System Status</a> </li>
+                        </ul>
+                    </li>
+                    <li class="footer-info-item desktop">
+                        <h3 class="footer-title">Contact</h3>
+                        <ul class="history-list">
+                            <li class="history-item">Apple Store (Education Institutions) </li>
+                            <li class="history-item">1300-551-927</li>
+                            <li class="history-item">Apple Store (Small Business)</li>
+                            <li class="history-item">1300-551-927</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p class="footer-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. S</p>
+            </div>
+        </div>
+    </footer>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.slides.min.js"></script>
+    <script>
+        $(function() {
+            $('#slides').slidesjs({
+                width: 200,
+                height: 228,
+                navigation: false
+            });
+        });
+        $(function() {
+            $('#slides2').slidesjs({
+                width: 200,
+                height: 228,
+                navigation: false
+            });
+        });
+    </script>
+</div>
+<script>
+    var menuBtn = document.getElementById('burgerBtn');
+    var sideBar = document.getElementById('sidebar');
+    var flag = true;
+    menuBtn.addEventListener('click', function () {
+        if(flag) {
+            sideBar.style.left = '0';
+            flag = false;
+        }else{
+            sideBar.style.left = '-300px';
+            flag = true;
+        }
+
+    });
+</script>
+</body>
+</html>
