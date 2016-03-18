@@ -173,7 +173,7 @@ img {
 }
 .side-arrow-btn {
     position: absolute;
-    top: 52rem;
+    top: 58rem;
     left: 36%;
     width: .9em;
     -ms-transform: rotate(90deg);
@@ -422,10 +422,16 @@ img {
 .padding-top-none {
     padding-top: 0;
 }
+.no-display {
+    display: none;
+}
 
 /*** MEDIA QUERIES ***/
 
 @media (min-width: 900px) {
+    .no-display {
+        display: inline-block;
+    }
     .main-header,
     .section-big,
     .section-jordan {
@@ -433,6 +439,9 @@ img {
     }
     .side-content {
         width: 128px;
+    }
+    .side-arrow-btn {
+        top: 52rem;
     }
     .main-header,
     .section-big {
