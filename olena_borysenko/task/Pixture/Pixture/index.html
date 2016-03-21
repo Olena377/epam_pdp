@@ -8,27 +8,8 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/fonts.css"/>
+    <link rel="stylesheet" href="css/tinycarousel.css"/>
     <link rel="stylesheet" href="css/styles.css"/>
-    <style>
-    #slides {
-      display: none
-    }
-    .container {
-      margin: 0 auto;
-    }
-
-    @media (min-width: 768px) and (max-width: 979px) {
-     .container {
-        width: 40%;
-      }
-    }
-
-    @media (min-width: 1200px) {
-      .container {
-         width: 40%;
-      }
-    }
-    </style>
 </head>
 <body>
 <div class="wrapper">
@@ -38,7 +19,6 @@
         <div class="header-description-title">
             <h3 class="header-title">Humble Beginings</h3>
             <p class="header-description">Lorem Lorem ipsum dolor sit amet. consectetur adipisicing elit. sed do eiusmod tempor incididut ut labore et dolore magna aliqu.</p>
-
             <div class="more">
                 <span class="dot dot-more"></span>
                 <span class="dot dot-more"></span>
@@ -46,7 +26,6 @@
             </div>
         </div>
         <div class="aside-link-block">
-            <!--content: '&lt;'-->
             <div class="inside">
                 <a href="#" class="vertical link">paint the power<span class="author">blsa rovar</span></a>
             </div>
@@ -62,10 +41,10 @@
             </ul>
         </aside>
         <section>
-            <div class="wrapper-slider">
+            <div class="wrapper-slider" id="slider1">
                 <h3 class="little-title">Pictires worth seeing</h3>
-                <div class="container">
-                    <ul class="slider" id="slides">
+                <div class="viewport">
+                    <ul class="overview">
                         <li class="slider-item">
                             <div class="wrapper-img">
                                 <img src="images/card2.png" alt="picture" class="slide-img">
@@ -117,7 +96,6 @@
                             </div>
                             <div class="bottom-side">
                                 <header>Bliss Texture</header>
-
                                 <p class="slider-description">Lorem ipsum dolor sit amet. consectetur adipisicing elit. sed do eiusmod tempor incididut ut labore et dolore magna aliqu.</p>
                                 <footer class="footer-slider">
                                     <div class="dots">
@@ -132,10 +110,9 @@
                                 </footer>
                             </div>
                         </li>
-                        <a href="#" class="slidesjs-next slidesjs-navigation bracket"><i class="icon-chevron-right icon-large"> &lt; </i></a>
-
                     </ul>
                 </div>
+                <a class="buttons next btn-left" href="#"></a>
             </div>
         </section>
         <section class="banner2">
@@ -173,10 +150,10 @@
             </div>
         </section>
         <section class="slider-desktop">
-            <div class="wrapper-slider">
+            <div class="wrapper-slider" id="slider2">
                 <h3 class="little-title">Pictires worth seeing</h3>
-                <div class="container">
-                    <ul class="slider" id="slides2">
+                <div class="container viewport" >
+                    <ul class="slider overview">
                         <li class="slider-item">
                             <div class="wrapper-img">
                                 <img src="images/card2.png" alt="picture" class="slide-img">
@@ -217,7 +194,6 @@
                                     <div class="comments">
                                         <i class="icon icon-comment"></i><span class="count-link">375</span><span>comments</span>
                                     </div>
-
                                 </footer>
                             </div>
                         </li>
@@ -228,7 +204,6 @@
                             </div>
                             <div class="bottom-side">
                                 <header>Bliss Texture</header>
-
                                 <p class="slider-description">Lorem ipsum dolor sit amet. consectetur adipisicing elit. sed do eiusmod tempor incididut ut labore et dolore magna aliqu.</p>
                                 <footer class="footer-slider">
                                     <div class="dots">
@@ -243,9 +218,9 @@
                                 </footer>
                             </div>
                         </li>
-                        <a href="#" class="slidesjs-next slidesjs-navigation bracket"><i class="icon-chevron-right icon-large"> &lt; </i></a>
-                    </ul>
+                   </ul>
                 </div>
+                <a class="buttons next btn-left" href="#"></a>
             </div>
         </section>
         <section class="section">
@@ -300,7 +275,7 @@
                             <li class="history-item"><a href="#" class="link">Downloads& Updates</a> </li>
                             <li class="history-item"><a href="#" class="link">Manuals</a> </li>
                             <li class="history-item"><a href="#" class="link">Tech Specs</a> </li>
-                            <li class="history-item"><a href="#"class="link">System Status</a> </li>
+                            <li class="history-item"><a href="#" class="link">System Status</a> </li>
                         </ul>
                     </li>
                     <li class="footer-info-item desktop">
@@ -319,38 +294,14 @@
             </div>
         </div>
     </footer>
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="js/jquery.slides.min.js"></script>
-    <script>
-        $(function() {
-            $('#slides').slidesjs({
-                width: 200,
-                height: 228,
-                navigation: false
-            });
-        });
-        $(function() {
-            $('#slides2').slidesjs({
-                width: 200,
-                height: 228,
-                navigation: false
-            });
-        });
-    </script>
 </div>
-<script>
-    var menuBtn = document.getElementById('burgerBtn');
-    var sideBar = document.getElementById('sidebar');
-    var flag = true;
-    menuBtn.addEventListener('click', function () {
-        if(flag) {
-            sideBar.style.left = '0';
-            flag = false;
-        }else{
-            sideBar.style.left = '-300px';
-            flag = true;
-        }
-
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/jquery.tinycarousel.js"></script>
+<script type="text/javascript">
+    $(document).ready(function()
+    {
+        $('#slider1, #slider2').tinycarousel();
     });
 </script>
 </body>
