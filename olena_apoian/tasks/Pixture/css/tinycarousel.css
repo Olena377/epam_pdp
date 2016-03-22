@@ -24,7 +24,9 @@
 }
 
 #slider1 .buttons:hover,
-#slider2 .buttons:hover {
+#slider2 .buttons:hover,
+#slider1 .buttons:active,
+#slider2 .buttons:active {
     color: #C01313;
     background: #0c2539;
 }
@@ -53,7 +55,8 @@
 
     #slider1 .viewport,
     #slider2 .viewport {
-        margin-right: 15rem;
+        position: relative;
+        right: 15rem;
         height: 435px;
     }
     #slider1 .buttons,
