@@ -44,13 +44,13 @@ h1 {
 }
 
 #burgerBtn {
-  position: absolute;
-  top: 45px;
-  left: 44px;
+  position: fixed;
+  top: 20px;
+  left: 15px;
   margin-top: -11px;
-  padding: 13px 8px;
-  width: 32px;
-  height: 40px;
+  padding: 8px 8px;
+  width: 80px;
+  height: 80px;
   text-shadow: none;
   color: transparent;
   z-index: 11;
@@ -62,12 +62,19 @@ h1 {
   display: block;
   height: 4px;
   top: 50%;
+  left: 30%;
   position: absolute;
   width: 34px;
   background: #fff;
   -webkit-box-shadow: 0 6px #fff, 0 -6px #fff;
   box-shadow: 0 10px #fff, 0 -10px #fff;
   border-radius: 2px;
+}
+
+#burgerBtn:hover::before {
+  background: #ccc;
+  -webkit-box-shadow: 0 6px #ccc, 0 -6px #ccc;
+  box-shadow: 0 10px #ccc, 0 -10px #ccc;
 }
 
 .header-title {
@@ -95,7 +102,7 @@ h1 {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 80px;
+  width: 115px;
   background: #130326;
 }
 
@@ -124,7 +131,7 @@ h1 {
   top: 0;
   left: -110px;
   bottom: 0;
-  padding-top: 100px;
+  padding-top: 105px;
   background: #140328;
   z-index: 10;
   -webkit-transition: left 1s ease-out 0.5s;
@@ -140,7 +147,7 @@ h1 {
 
 .icon {
   padding: 0 6px;
-   font-size: 20px;
+  font-size: 20px;
 }
 
 .item-menu { display: none; }
@@ -241,6 +248,10 @@ h1 {
   cursor: pointer;
 }
 
+.dots:hover {
+  background: #eee;
+}
+
 .footer-slider .dot { background: #000; }
 
 .dot {
@@ -260,7 +271,7 @@ h1 {
 }
 
 .logo {
-  width: 600px;
+  width: 550px;
   height: 215px;
   padding-top: 435px;
   padding-bottom: 220px;
@@ -272,6 +283,11 @@ h1 {
 .logo-header { background: none; }
 
 .section { position: relative; }
+
+.block-info {
+  background: url("../images/bg-1.png");
+  background-size: cover;
+}
 
 .inside-date {
   width: 373px;
@@ -353,6 +369,7 @@ h1 {
 .author-banner {
   background: url("../images/1.png");
   background-attachment: fixed;
+  background-size: cover;
 }
 
 .info-by {
@@ -441,6 +458,10 @@ h1 {
 
 @media screen and (min-width: 900px) {
 
+  #burgerBtn {
+    background: #140327;
+  }
+
   .btn-left {
     width: 50px;
     height: 50px;
@@ -451,18 +472,26 @@ h1 {
     cursor: pointer;
   }
 
-  .btn-left:hover {
+  #slider1 .buttons:hover,
+  #slider2 .buttons:hover {
+    width: 50px;
+    height: 50px;
     background: url("../images/sprites.png") no-repeat;
-    color: #ccc;
+    background-position: -1239px -28px;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
   }
 
   #slider1 .viewport,
   #slider2 .viewport {
     height: 630px;
+    right: 11em;
+    margin-right: 0;
   }
 
   .slider-item {
-    width: 500px;
+    width: 440px;
   }
 
   .slider { left: -60%; }
@@ -472,7 +501,7 @@ h1 {
     width: 250px;
   }
 
-  .dots { padding: 30px; }
+  .dots { padding: 36px; }
 
   .bottom-side header { font-size: 25px; }
 
@@ -480,15 +509,33 @@ h1 {
 
   .slider-description {
     padding-bottom: 20px;
-    line-height: 35px;
+    line-height: 30px;
   }
 
-  .bottom-side header { margin: 30px 0 15px;  }
+  .bottom-side header { margin: 15px 0;  }
 }
 
 @media screen and (min-width: 1024px) {
 
-  .aside-link-block { display: block;  }
+  .block-info,
+  .block-col { padding: 5em 0; }
+
+  .wrapper-info-footer { width: 75%; }
+
+  .icon { font-size: 40px; }
+
+  .item-menu {
+    font-size: 32px;
+    padding-left: 10px
+  }
+
+  .aside-link-block {
+    display: block;
+  }
+
+  .block-info .aside-link-block {
+    background: transparent;
+  }
 
   .little-title { display: block; }
 
