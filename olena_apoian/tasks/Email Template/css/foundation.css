@@ -910,7 +910,9 @@ table.button table td {
   text-align: left;
   color: #fefefe;
   background: #dadad2;
-  border: 2px solid #dadad2; }
+  /*border: 2px solid #dadad2; */
+  border-radius: 5px;
+  }
 table.button table td.radius {
   border-radius: 3px; }
 table.button table td.rounded {
@@ -999,11 +1001,12 @@ table.button:active table td {
   background: #dadad2;
   color: #fefefe; }
 
-table.button:hover table a,
-table.button:visited table a,
-table.button:active table a {
-  border: 2px solid #dadad2; }
-
+table.button:hover table td,
+table.button:visited table td,
+table.button:active table td {
+  /*border: 2px solid #dadad2; }*/
+  background: #aaa;
+}
 table.button.secondary table td {
   background: #777777;
   color: #fefefe;
