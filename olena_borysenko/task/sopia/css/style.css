@@ -1,0 +1,16 @@
+@import url(base/normolise.css);
+.test {
+  color: red;
+  background: yellow; }
+
+.test {
+  font-size: 14px; }
+
+.test {
+  color: yellow; }
+
+h1 {
+  color: red; }
+
+.catalogue {
+  background: red; }
