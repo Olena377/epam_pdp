@@ -1,5 +1,5 @@
-@import "./base/normolise";
-@import "./base/fonts";
+@import "./base/normolise.css";
+@import "./base/fonts.scss";
 @import "./component/_header";
 
 
@@ -19,7 +19,6 @@ body,
 .content {
   box-sizing: border-box;
   min-height: 100%;
-  padding-bottom: 90px;
 }
 
 #footer {

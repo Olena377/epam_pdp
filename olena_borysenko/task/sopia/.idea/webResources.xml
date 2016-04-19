@@ -5,8 +5,8 @@
       <entry url="file://$PROJECT_DIR$">
         <entryData>
           <resourceRoots>
-            <path value="file://$PROJECT_DIR$/sass/component" />
             <path value="file://$PROJECT_DIR$/sass/base" />
+            <path value="file://$PROJECT_DIR$/sass/component" />
           </resourceRoots>
         </entryData>
       </entry>
