@@ -332,7 +332,7 @@
   padding: 0 40px; }
 
 .collection__item {
-  width: 24%;
+  width: 23.5%;
   margin-right: 1%; }
 
 .collection__item:last-child {
@@ -505,7 +505,9 @@ body,
   color: #fff; }
 
 .wrapper {
-  position: relative; }
+  position: relative;
+  max-width: 1400px;
+  margin: auto; }
 
 .content {
   box-sizing: border-box;
