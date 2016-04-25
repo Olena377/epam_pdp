@@ -1,0 +1,56 @@
+.section {
+  margin: 50px 0;
+}
+.menu {
+  color: @color-main;
+  &__item {
+    display: inline-block;
+    padding: 20px 5%;
+  }
+  &__item--right {
+    margin-right: 4%;
+  }
+  &__item--straw {
+    background: @color-side;
+  }
+  &__item--black {
+    background: @color-prime;
+  }
+  &__wrapper {
+    position: relative;
+    padding-left: 50px;
+  }
+  &__wrapper:before {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    content: "\f072";
+    font-family: @font-awesome;
+    font-size: 48px;
+  }
+  &__wrapper--left:after {
+    .wrapper(@border-right: none);
+    right: -107px;
+  }
+  &__wrapper--right:after {
+    .wrapper(@border-left: none);
+    left: -106px;
+  }
+  &__heading {
+    font-size: 30px;
+  }
+  &__text {
+    font-size: 14px;
+  }
+  &__wrapper--center:after {
+    .wrapper(@border-right: none; @border-left: 43px solid @color-main;);
+    top: -21px;
+    right: 289px;
+  }
+  &__wrapper--center:before {
+    .wrapper(@border-left: none; @border-right: 43px solid @color-main;);
+    top: -21px;
+    left: 289px;
+
+  }
+}

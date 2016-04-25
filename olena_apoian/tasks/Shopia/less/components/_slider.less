@@ -1,0 +1,33 @@
+
+.slider__item {
+  position: relative;
+
+}
+.slider__image {
+  width: 100%;
+}
+.slider__wrapper {
+  .wrapper(@top: 0; @border-left: 200px solid transparent; @border-right: 200px solid transparent; @border-top: 80px solid @color-main;);
+  left: 40%;
+}
+
+.slider-navigation {
+  position: absolute;
+  bottom: 80px;
+  left: 47%;
+}
+.slider-navigation__item {
+  display: inline-block;
+  margin-right: 20px;
+}
+.slider-navigation__diamond {
+  width: 18px;
+  height: 18px;
+  border: 1px solid @color-slider;
+  background: @color-slider;
+  .rotate(45deg);
+}
+.slider-navigation__diamond:hover {
+  border: 1px solid @color-prime;
+  background: @color-prime;
+}

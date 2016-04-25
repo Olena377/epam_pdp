@@ -1,0 +1,122 @@
+.footer {
+  margin-top: -50px;
+  padding: 60px 0;
+  background: @color-footerg;
+  color: @color-footer;
+}
+.top-footer {
+  padding-bottom: 40px;
+}
+.top-footer--line {
+  position: relative;
+  border-bottom: 1px solid @color-footer;
+}
+.top-footer--line:after {
+  position: absolute;
+  top: 388px;
+  border-top: 10px solid @color-footer;
+  border-left: 15px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 15px solid transparent;
+  content: "";
+  right: 50%;
+}
+.top-footer__item {
+  display: inline-block;
+  width: 15%;
+  vertical-align: top;
+}
+.top-footer__item--right {
+  margin-right: 5%;
+}
+.top-footer-heading {
+  margin-bottom: 40px;
+  color: @color-main;
+}
+.info__item {
+  .text(14px, 36px, 400, @color-footer);
+}
+.info__item:hover,
+.info-item:active {
+  color: @color-main;
+}
+.top-footer__item--big {
+  width: 25%
+}
+.navigation__link--black {
+  top: 10px;
+  left: 15px;
+  font-size: 24px;
+  color: @color-footerg;
+}
+.navigation__item--circlewhite {
+  width: 50px;
+  height: 50px;
+  background: @color-main;
+  .border(2px, solid, @color-main);
+}
+.top-footer__text {
+  margin: 40px 0;
+  .text(16px, 30px, 600, @color-main);
+}
+.top-footer-span {
+  font-family: @font-italic;
+  color: @color-footer;
+}
+.bottom-footer {
+  position: relative;
+  padding-top: 40px;
+  .text(11px, 18px, 400);
+}
+.cards {
+  margin-top: 20px;
+}
+.cards__item {
+  display: inline-block;
+}
+.cards__item--right {
+  margin-right: 1%;
+}
+.cards__icon {
+  font-size: 18px !important;
+}
+.bottom-footer__btn {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background: @color-prime;
+}
+.bottom-footer__link {
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  font-size: 30px;
+  color: @color-main;
+}
+.footer-form {
+  position: relative;
+  padding: 5px;
+  padding-left: 20px;
+  .text(12px, 30px, 400, @color-main);
+  .border(1px, solid, @color-footer);
+}
+.footer-form__email {
+  width: 70%;
+  background: @color-footerg;
+  color: @color-footer;
+  border: none;
+}
+.footer-form__submit {
+  position: absolute;
+  right: 5px;
+  padding: 0 5%;
+  background: @color-footer;
+  border: none;
+  cursor: pointer;
+}
+.footer-form__submit:hover,
+.footer-form__submit:active {
+  background: @color-main;
+}

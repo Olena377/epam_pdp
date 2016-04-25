@@ -1,0 +1,60 @@
+.collection {
+  margin: 0 auto;
+  padding: 20px;
+  .border(1px, solid, @color-line);
+}
+.collection__item {
+  position: relative;
+  display: inline-block;
+  width:23%;
+}
+.collection__item--right {
+  margin-right: 2%;
+}
+.collection__item--bottom {
+  margin-bottom: 20px;
+}
+.collection__wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.collection__item:hover > .collection__wrapper{
+  background: @color-shadow;
+}
+.collection__button {
+  position: absolute;
+  bottom: 3px;
+  left: 13%;
+  border-bottom: 50px solid @color-prime;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  height: 0;
+  width: 100px;
+  .text(14px, 50px, 700, @color-main);
+}
+.collection__button:hover,
+.collection__button:active {
+  border-bottom: 50px solid @color-btn;
+}
+.circle {
+  position: absolute;
+  top: 17px;
+  left: 5%;
+  width: 60px;
+  height: 60px;
+  background: @color-circle;
+  .border-radius(50px);
+}
+.circle__text {
+  position: absolute;
+  top: 18px;
+  left: 25%;
+  .text(22px, 18px, 700, @color-main);
+}
+.circle__percent {
+  .text(11px, 18px, 700, @color-main);
+  vertical-align: super;
+}

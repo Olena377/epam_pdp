@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BEM</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet/less" type="text/css" href="less/style.less">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700italic' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <header class="header">
+          <div class="header__top">
+              <div class="container clearfix">
+                  <p class="header__call header__call--small">Call +001 555 801</p>
+                  <nav class="navigation header__nav navigation--uppercase">
+                      <ul class="navigation__list">
+                          <li class="navigation__item navigation__item--small-text navigation__item--margin--right">
+                              <a href="#" class="navigation__link navigation__link--brown navigation__link--line">WELCOME MSG!</a>
+                          </li>
+                          <li class="navigation__item navigation__item--small-text navigation__item--margin--right">
+                              <a href="#" class="navigation__link navigation__link--brown navigation__link--line">my account</a></li>
+                          <li class="navigation__item navigation__item--small-text navigation__item--margin--right">
+                              <a href="#" class="navigation__link navigation__link--brown navigation__link--line">my wishlist</a>
+                          </li>
+                          <li class="navigation__item navigation__item--small-text">
+                              <a href="#" class="navigation__link navigation__link--brown">login</a>
+                          </li>
+                      </ul>
+                  </nav>
+              </div>
+          </div>
+            <div class="header__bottom">
+                <div class="container clearfix">
+                    <nav class="navigation header__left navigation--font navigation--capitalize">
+                        <ul class="navigation__list">
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__link navigation__link--black">home</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#"  class="navigation__link navigation__link--black">gallery</a></li>
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__link navigation__link--black">categories</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__link navigation__link--black">pages</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="index.html" class="logo" id="logo">
+                        <img src="img/logo.png">
+                    </a>
+                    <select class="header__select header__nav">
+                        <option class="header__options" selected>RUPIAH</option>
+                        <option class="header__options">Short Option</option>
+                        <option class="header__options">Short Option</option>
+                    </select>
+                    <nav class="navigation header__nav">
+                        <ul class="navigation__list">
+                            <li class="navigation__item navigation__item--circle">
+                                <a href="#" class="navigation__link navigation__abs navigation__link--straw"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="navigation__item navigation__item--circle">
+                                <a href="#"  class="navigation__link navigation__abs navigation__link--straw"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li class="navigation__item navigation__item--circle">
+                                <a href="#" class="navigation__link navigation__abs navigation__link--straw"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="navigation__item navigation__item--circle">
+                                <a href="#" class="navigation__link navigation__abs navigation__link--straw"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="section">
+                <ul class="slider">
+                    <li class="slider__item">
+                        <div class="slider__wrapper"></div>
+                        <img src="img/bg.jpg" class="slider__image" alt="mide-season sale">
+                        <a href="#" class="button slider__button button--straw">SHOP NOW</a>
+                        <ul class="slider-navigation">
+                            <li class="slider-navigation__item">
+                                <a href="#">
+                                    <div class="slider-navigation__diamond"></div>
+                                </a>
+                            </li>
+                            <li class="slider-navigation__item">
+                                <a href="#">
+                                    <div class="slider-navigation__diamond"></div>
+                                </a>
+                            </li>
+                            <li class="slider-navigation__item">
+                                <a href="#">
+                                    <div class="slider-navigation__diamond"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <div class="container">
+                <section class="section section__menu">
+                    <ul class="menu">
+                        <li class="menu__item menu__item--right menu__item--straw">
+                           <div class="menu__wrapper menu__wrapper--left">
+                               <h3 class="menu__heading">FREE SHIPPING</h3>
+                               <p class="menu_text">In Order Min $200</p>
+                           </div>
+                        </li>
+                        <li class="menu__item menu__item--right menu__item--black">
+                            <div class="menu__wrapper">
+                                <div class="menu__wrapper--center"></div>
+                                <h3 class="menu__heading">FREE SHIPPING</h3>
+                                <p class="menu_text">In Order Min $200</p>
+                            </div>
+                        </li>
+                        <li class="menu__item menu__item--straw">
+                            <div class="menu__wrapper menu__wrapper--right">
+                                <h3 class="menu__heading">FREE SHIPPING</h3>
+                                <p class="menu_text">In Order Min $200</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section class="section">
+                    <h2 class="section__heading">HandPicked</h2>
+                    <ul class="product-list">
+                        <li class="product-list__item product-list__item--right">
+                            <div class="product-list__wrapper product-list__wrapper--padding">
+                                <img src="img/prod-1.jpg" class="product-list__image">
+                                <div class="product-list__container">
+                                    <a href="#" class="button product-list__button button--straw">SHOP NOW</a>
+                                </div>
+                                <div class="product-lines"></div>
+                            </div>
+                            <div class="product-list__wrapper">
+                                <img src="img/prod-2.jpg" class="product-list__image">
+                                <div class="product-list__container">
+                                    <a href="#" class="button product-list__button button--straw">SHOP NOW</a>
+                                </div>
+                                <div class="product-lines"></div>
+                            </div>
+                        </li>
+                        <li class="product-list__item product-list__width product-list__item--right">
+                            <div class="product-list__wrapper">
+                                <img src="img/prod-long.jpg" class="product-list__image">
+                                <div class="product-list__container">
+                                    <a href="#" class="button product-list__button button--straw">SHOP NOW</a>
+                                </div>
+                                <div class="product-lines"></div>
+                            </div>
+                        </li>
+                        <li class="product-list__item product-list__item--last">
+                            <div class="product-list__wrapper product-list__wrapper--padding">
+                                <img src="img/prod-1.jpg" class="product-list__image">
+                                <div class="product-list__container">
+                                    <a href="#" class="button product-list__button button--straw">SHOP NOW</a>
+                                </div>
+                            </div>
+                            <div class="product-list__wrapper">
+                                <img src="img/prod-4.jpg" class="product-list__image">
+                                <div class="product-list__container">
+                                    <a href="#" class="button product-list__button button--straw">SHOP NOW</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section class="section">
+                    <h2 class="section__heading">Summer Collection</h2>
+                    <ul class="collection">
+                        <li class="collection__item collection__item--right collection__item--bottom">
+                            <div class="circle">
+                                <span class="circle__text">20<span class="circle__percent"> %</span></span>
+                            </div>
+                            <img src="img/item.jpg" class="collection_image" alt="Jacket">
+                            <div class="collection__wrapper"></div>
+                            <a href="#" class="collection__button">+ADD TO CART</a>
+                        </li>
+                        <li class="collection__item collection__item--right collection__item--bottom">
+                            <div class="circle">
+                                <span class="circle__text">60<span class="circle__percent"> %</span></span>
+                            </div>
+                            <img src="img/item.jpg" class="collection_image" alt="Jacket">
+                            <div class="collection__wrapper"></div>
+                            <a href="#" class="collection__button">+ADD TO CART</a>
+                        </li>
+                        <li class="collection__item collection__item--right collection__item--bottom">
+                            <div class="circle">
+                                <span class="circle__text">35<span class="circle__percent"> %</span></span>
+                            </div>
+                            <img src="img/item.jpg" class="collection_image" alt="Jacket">
+                            <div class="collection__wrapper"></div>
+                            <a href="#" class="collection__button">+ADD TO CART</a>
+                        </li>
+                        <li class="collection__item collection__item--bottom">
+
+                            <img src="img/item.jpg" class="collection_image" alt="Jacket">
+                            <div class="collection__wrapper"></div>
+                            <a href="#" class="collection__button">+ADD TO CART</a>
+                        </li>
+                        <li class="collection__item collection__item--right">
+                            <img src="img/item.jpg" class="collection_image" alt="Jacket">
+                            <div class="collection__wrapper"></div>
+                            <a href="#" class="collection__button">+ADD TO CART</a>
+                        </li>
+                        <li class="collection__item collection__item--right">
+                            <img src="img/item.jpg" class="collection_image" alt="Jacket">
+                            <div class="collection__wrapper"></div>
+                            <a href="#" class="collection__button">+ADD TO CART</a>
+                        </li>
+                        <li class="collection__item collection__item--right">
+                            <img src="img/item.jpg" class="collection_image" alt="Jacket">
+                            <div class="collection__wrapper"></div>
+                            <a href="#" class="collection__button">+ADD TO CART</a>
+                        </li>
+                        <li class="collection__item">
+                            <img src="img/item.jpg" class="collection_image" alt="Jacket">
+                            <div class="collection__wrapper"></div>
+                            <a href="#" class="collection__button">+ADD TO CART</a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="section">
+                    <h2 class="section__heading">Our Brand</h2>
+                    <ul class="brand">
+                        <li class="brand__item brand__item--right">
+                            <a href="#" class="brand__image brand__image--bakery"></a>
+                        </li>
+                        <li class="brand__item brand__item--right">
+                            <a href="#" class="brand__image brand__image--lavalier"></a>
+                        </li>
+                        <li class="brand__item brand__item--right">
+                            <a href="#" class="brand__image brand__image--harvest"></a>
+                        </li>
+                        <li class="brand__item brand__item--right">
+                            <a href="#" class="brand__image brand__image--landlock"></a>
+                        </li>
+                        <li class="brand__item brand__item--right">
+                            <a href="#" class="brand__image brand__image--spectrum"></a>
+                        </li>
+                        <li class="brand__item">
+                            <a href="#" class="brand__image brand__image--energy"></a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <section class="section">
+                <h2 class="section__heading">Customers Says</h2>
+                <div class="banner banner--bgstraw">
+                    <div class="slider__wrapper"></div>
+                    <div class="container">
+                        <ul class="people">
+                            <li class="people__item people__item--right clearfix">
+                                <div class="people_imgwrapper">
+                                    <img class="people_image" src="img/customer1.png" alt="Girl">
+                                </div>
+                                <div class="people__wrapper">
+                                    <p class="people__text">Sed ut perspiciatis unde omnis iste natus error sitvoluptatem accusantium doloremque</p>
+                                    <h2 class="people__name">Sandra Dewi</h2>
+                                    <p class="people__profession">FASHION STYLISH</p>
+                                </div>
+                            </li>
+                            <li class="people__item">
+                                <div class="people__wrapper">
+                                    <p class="people__text">Sed ut perspiciatis unde omnis iste natus error sitvoluptatem accusantium doloremque</p>
+                                    <h2 class="people__name">Shaheer Sheikh</h2>
+                                    <p class="people__profession">DESIGNER</p>
+                                </div>
+                                <div class="people_imgwrapper">
+                                    <img class="people_image" src="img/customer2.png" alt="Girl">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <ul class="top-footer top-footer--line">
+                    <li class="top-footer__item top-footer__item--right">
+                        <h3 class="top-footer-heading">SHOPS</h3>
+                        <ul class="info">
+                            <li class="info__item"><a href="#" class="info__link">New In</a></li>
+                            <li class="info__item"><a href="#" class="info__link">Women</a></li>
+                            <li class="info__item"><a href="#" class="info__link">Men</a></li>
+                            <li class="info__item"><a href="#" class="info__link">Shoes</a></li>
+                            <li class="info__item"><a href="#" class="info__link">Bags & Accessorises</a></li>
+                            <li class="info__item"><a href="#" class="info__link">Top Brands</a></li>
+                            <li class="info__item"><a href="#" class="info__link">Sale & Special Offers</a></li>
+                            <li class="info__item"><a href="#" class="info__link">Lookbook</a></li>
+                        </ul>
+                    </li>
+                    <li class="top-footer__item top-footer__item--right">
+                        <h3 class="top-footer-heading">INFORMATION</h3>
+                        <ul class="info">
+                            <li class="info__item"><a href="#" class="info__link">New In</a></li>
+                            <li class="info__item"><a href="#" class="info__link">Women</a></li>
+                            <li class="info__item"><a href="#" class="info__link">Men</a></li>
+                            <li class="info__item"><a href="#" class="info__link">Shoes</a></li>
+                            <li class="info__item"><a href="#" class="info__link">Bags & Accessorises</a></li>
+                            <li class="info__item"><a href="#" class="info__link">Top Brands</a></li>
+                            <li class="info__item"><a href="#" class="info__link">Sale & Special Offers</a></li>
+                            <li class="info__item"><a href="#" class="info__link">Lookbook</a></li>
+                        </ul>
+                    </li>
+                    <li class="top-footer__item top-footer__item--right">
+                        <h3 class="top-footer-heading">CUSTOMER SERVICE</h3>
+                        <ul class="info">
+                            <li class="info__item"><a href="#" class="info__link">New In</a></li>
+                            <li class="info__item"><a href="#" class="info__link">Women</a></li>
+                            <li class="info__item"><a href="#" class="info__link">Men</a></li>
+                            <li class="info__item"><a href="#" class="info__link">Shoes</a></li>
+                            <li class="info__item"><a href="#" class="info__link">Bags & Accessorises</a></li>
+                            <li class="info__item"><a href="#" class="info__link">Top Brands</a></li>
+                            <li class="info__item"><a href="#" class="info__link">Sale & Special Offers</a></li>
+                            <li class="info__item"><a href="#" class="info__link">Lookbook</a></li>
+                        </ul>
+                    </li>
+                    <li class="top-footer__item top-footer__item--big">
+                        <h3 class="top-footer-heading">STAY CONNECTED</h3>
+                        <ul class="navigation__list">
+                            <li class="navigation__item navigation__item--circle navigation__item--circlewhite">
+                                <a href="#" class="navigation__link navigation__abs navigation__link--black"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="navigation__item navigation__item--circle navigation__item--circlewhite">
+                                <a href="#" class="navigation__link navigation__abs navigation__link--black"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li class="navigation__item navigation__item--circle navigation__item--circlewhite">
+                                <a href="#" class="navigation__link navigation__abs navigation__link--black"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="navigation__item navigation__item--circle navigation__item--circlewhite">
+                                <a href="#" class="navigation__link navigation__abs navigation__link--black"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="navigation__item navigation__item--circle navigation__item--circlewhite">
+                                <a href="#" class="navigation__link navigation__abs navigation__link--black"><i class="fa fa-rss" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                        <p class="top-footer__text">SUBSCRIBE   <span class="top-footer-span">in</span>  OUR  NEWS  LETTER</p>
+                        <form class="footer-form">
+                            <input class="footer-form__email" type="email" name="email" value="Enter Your Email Address">
+                            <button class="footer-form__submit">SUBSCRIBE</button>
+                        </form>
+                    </li>
+                </ul>
+                <div class="bottom-footer">
+                    <p class="bottom-footer__text">© 2015  Shopia  Fashion Store Shopify.</p>
+                    <p class="bottom-footer__text">All Rights Reserved. Ecommerce Software by Shopify.</p>
+                    <p class="bottom-footer__text">Designed by  MoccaLabs.com</p>
+                    <ul class="cards">
+                        <li class="cards__item cards__item--right">
+                           <i class="fa fa-cc-visa cards__icon" aria-hidden="true"></i>
+                        </li>
+                        <li class="cards__item cards__item--right">
+                            <i class="fa fa-cc-mastercard cards__icon" aria-hidden="true"></i>
+                        </li>
+                        <li class="cards__item cards__item--right">
+                            <i class="fa fa-cc-discover cards__icon" aria-hidden="true"></i>
+                        </li>
+                        <li class="cards__item">
+                            <i class="fa fa-cc-discover cards__icon" aria-hidden="true"></i>
+                        </li>
+                    </ul>
+                    <div class="bottom-footer__btn">
+                        <a class="bottom-footer__link" href="#logo"><i class="fa fa-angle-up"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/less.min.js"></script>
+    </body>
+</html>

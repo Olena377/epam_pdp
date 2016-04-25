@@ -1,0 +1,38 @@
+.border-radius (@radius) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius   : @radius;
+  border-radius        : @radius;
+}
+.border (@border-width: null, @border-style: null, @border-color: null) {
+  border-width: @border-width;
+  border-style: @border-style;
+  border-color: @border-color;
+}
+.scale (@factor) {
+  -webkit-transform  : scale(@factor);
+  -moz-transform     : scale(@factor);
+  -ms-transform      : scale(@factor);
+  -o-transform       : scale(@factor);
+}
+.wrapper (@position: absolute, @top: -20px,  @border-top:  48px solid transparent, @border-left: 43px solid @color-side,  @border-bottom: 48px solid transparent, @border-right: 43px solid @color-side, @content:""){
+  position: @position;
+  top: @top;
+  border-top: @border-top;
+  border-left: @border-left;
+  border-bottom: @border-bottom;
+  border-right: @border-right;
+  content: @content;
+}
+.text(@size, @l-height: null, @weight: null, @color: null) {
+  font-size: @size;
+  line-height: @l-height;
+  font-weight: @weight;
+  color: @color;
+}
+.rotate(@deg) {
+  -webkit-transform: rotate(@deg);
+  -moz-transform: rotate(@deg);
+  -ms-transform: rotate(@deg);
+  -o-transform: rotate(@deg);
+  transform: rotate(@deg);
+}

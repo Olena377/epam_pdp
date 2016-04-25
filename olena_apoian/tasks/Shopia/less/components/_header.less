@@ -1,0 +1,104 @@
+.header {
+  &__top {
+    padding: 10px 0 ;
+    background-color: #f2f2f2;
+  }
+  &__bottom {
+    position: relative;
+    margin-bottom: 50px;
+    padding-top: 40px;
+  }
+  &__call {
+    position: relative;
+    float: left;
+    padding-left: 20px;
+  }
+  &__call:before {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    content: "\f095";
+    font-family: @font-awesome;
+  }
+  &__call--small {
+    font-size: 11px;
+    line-height: 18px;
+  }
+  &__nav {
+    float: right;
+  }
+  &__left{
+    float: left;
+  }
+  &__select {
+    width: 90px;
+    margin-left: 50px;
+    padding: 10px 5px;
+    font-size: 12px;
+    background-color: @color-prime;
+    color: @color-main;
+  }
+  &__options {
+    width: 90px;
+  }
+}
+.logo {
+  position: absolute;
+  left: 43%;
+}
+.navigation {
+  &__item {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  &__item:last-child {
+    margin-right: 0;
+  }
+  &__item--circle {
+    position: relative;
+    width: 34px;
+    height: 34px;
+    .border(2px, solid, @color-side);
+    .border-radius(50%);
+  }
+  &__item--small-text {
+    font-size: 11px;
+  }
+  &__item--margin--right {
+    margin-right: 30px;
+  }
+  &__link--brown {
+    color: @color-header-top;
+  }
+  &__link--black {
+    color: @color-prime;
+  }
+  &__link--straw {
+    color: @color-side;
+  }
+  &__link:hover {
+    color: @color-btn;
+  }
+  &__link--line {
+    padding-right: 20px;
+    border-right: 1px solid @color-header-top;
+  }
+  &__abs {
+    position: absolute;
+    top: 7px;
+    left: 10px;
+  }
+  &__item--circle:hover {
+     .scale(1.3);
+  }
+  &--font {
+    font-family: @font-italic;
+    font-size: 18px;
+  }
+  &--uppercase {
+    text-transform: uppercase;
+  }
+  &--capitalize {
+    text-transform: capitalize;
+  }
+}
