@@ -5,7 +5,8 @@
     <title>Resume</title>
     <meta http-equiv="x-ua-compatible" content="IE=Edge"/>
     <meta name="viewport" content="width=device-width, initial scale=1.0"/>
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,300italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
@@ -13,6 +14,7 @@
     <header class="header">
         <div class="header__top info">
             <div class="info__phone phone">
+                <span class="fa fa-phone" aria-hidden="true"></span>
                 <span class="phone__label">Call +</span>
                 <span class="phone__number"> 011 555 801</span>
             </div>
@@ -23,27 +25,38 @@
                 <li class="pages-nav__item item"><a class="item__link link" href="#">Login</a></li>
             </ul>
         </div>
-        <div class="header__bottom header-bottom-nav">
+        <div class="header__bottom header-bottom-nav section-wrapper">
             <ul class="header-bottom-nav__main-nav main-nav">
-                <li class="main-nav__item item"><a class="link" href="#">Home</a></li>
-                <li class="main-nav__item item"><a class="link" href="#">Gallery</a></li>
-                <li class="main-nav__item item"><a class="link" href="#">Categories</a></li>
-                <li class="main-nav__item item"><a class="link" href="#">Pages</a></li>
+                <li class="main-nav__item item nav-item"><a class="nav-item__link link" href="#">Home</a></li>
+                <li class="main-nav__item item nav-item"><a class="nav-item__link link" href="#">Gallery</a></li>
+                <li class="main-nav__item item nav-item"><a class="nav-item__link link" href="#">Categories</a></li>
+                <li class="main-nav__item item nav-item"><a class="nav-item__link link" href="#">Pages</a></li>
             </ul>
+            <select  class="header-bottom-nav__currency currency-option">
+                <option class="currency-option__item">Rupiah</option>
+                <option class="currency-option__item">Euro</option>
+            </select>
             <ul class="header-bottom-nav__social social">
-                <li class="social__item item item-social">
-                    <a href="#" class="item-social__link link icon icon-twitter"></a>
-                </li>
+                <li class="social__item item item-social"><a href="#" class="item-social__link link icon icon-twitter"></a></li>
                 <li class="social__item item item-social"><a href="#" class="item-social__link link icon icon-facebook"></a> </li>
                 <li class="social__item item item-social"><a href="#" class="item-social__link link icon icon-pinterest-circled"></a> </li>
                 <li class="social__item item item-social"><a href="#" class="item-social__link link icon icon-instagram"></a> </li>
             </ul>
+
             <div class="header-bottom-nav__logo logo">Shophia</div>
         </div>
     </header>
     <div class="content">
-        <section class="slider"></section>
-        <section class="support-block">
+        <section class="slider-wrapper triangle">
+             <ul class="slider-wrapper__block slider-block">
+                 <li class="slider-block__item item slider-item">
+                     <img class="slider-item__photo" src="image/slider1.jpg" alt="slide 1">
+                     <button class="slider-item__btn  btn-shop btn-shop--big"> Shop now</button>
+                 </li>
+             </ul>
+
+        </section>
+        <section class="support-block section-wrapper">
             <ul class="support">
                 <li class="support__item item support-feature">
                     <span class="support-feature__icon icon icon-flight"></span>
@@ -56,7 +69,7 @@
                 <li class="support__item support__item--center item support-feature">
                     <span class="support-feature__icon icon icon-clock"></span>
                     <div class="support-feature__info">
-                        <h3 class="support-feature__title">24/7 support</h3>
+                        <h3 class="support-feature__title">30-days returns</h3>
                         <span class="support-feature__text">Lifestyme Support</span>
                     </div>
                 </li>
@@ -70,8 +83,8 @@
 
             </ul>
         </section>
-        <section>
-            <div class="title-block">
+        <section class="section-wrapper">
+            <div class="title-block ">
                 <div class="title-block__line"></div>
                 <h2 class="title-block__title">HendPicked</h2>
                 <div class="title-block__line"></div>
@@ -121,7 +134,7 @@
                 </li>
             </ul>
         </section>
-        <section>
+        <section class="section-wrapper">
             <div class="title-block">
                 <div class="title-block__line line"></div>
                 <h2 class="title-block__title">Summer collection</h2>
@@ -135,7 +148,27 @@
                 </li>
                 <li class="collection__item item collection-block">
                     <img src="image/model-1.jpg" class="collection-block__picture" alt="model best">
+                    <button class="collection-block__btn collection-block__btn--black">+ Add to cart</button>
+                    <span class="collection-block__sale">20<i class="collection-block__per">%</i></span>
+                </li>
+                <li class="collection__item item collection-block">
+                    <img src="image/model-1.jpg" class="collection-block__picture" alt="model best">
                     <button class="collection-block__btn">+ Add to cart</button>
+                    <span class="collection-block__sale">20<i class="collection-block__per">%</i></span>
+                </li>
+                <li class="collection__item item collection-block">
+                    <img src="image/model-1.jpg" class="collection-block__picture" alt="model best">
+                    <button class="collection-block__btn">+ Add to cart</button>
+                    <span class="collection-block__sale">20<i class="collection-block__per">%</i></span>
+                </li>
+                <li class="collection__item item collection-block">
+                    <img src="image/model-1.jpg" class="collection-block__picture" alt="model best">
+                    <button class="collection-block__btn">+ Add to cart</button>
+                    <span class="collection-block__sale">20<i class="collection-block__per">%</i></span>
+                </li>
+                <li class="collection__item item collection-block">
+                    <img src="image/model-1.jpg" class="collection-block__picture" alt="model best">
+                    <button class="collection-block__btn collection-block__btn--black">+ Add to cart</button>
                     <span class="collection-block__sale">20<i class="collection-block__per">%</i></span>
                 </li>
                 <li class="collection__item item collection-block">
@@ -151,7 +184,7 @@
 
             </ul>
         </section>
-        <section>
+        <section class="section-wrapper">
             <div class="title-block">
                 <div class="title-block__line line"></div>
                 <h2 class="title-block__title">Our brand</h2>
@@ -178,13 +211,13 @@
                 </li>
             </ul>
         </section>
-        <section>
+        <section class="section-wrapper">
             <div class="title-block">
                 <div class="title-block__line line"></div>
                 <h2 class="title-block__title">Customers Says</h2>
                 <div class="title-block__line line"></div>
             </div>
-            <div class="info-block triangle">
+            <div class="info-block triangle triangle-little">
                 <div class="info-block__item custom-info">
                     <img class="custom-info__photo" src="image/customer1.png" alt="Sandra">
                     <div class="custom-info__description-wrapper description-wrapper">
@@ -211,8 +244,8 @@
         </section>
     </div>
     <footer class="footer">
-        <div class="footer__top">
-            <ul class="footer__top footer-info">
+        <div class="footer__top footer-info-block section-wrapper">
+            <ul class="footer-info-block footer-info">
                 <li class="footer-info__item item column">
                     <h4 class="column__title">Shops</h4>
                     <ul class="column__block content-info">
@@ -302,18 +335,39 @@
                 </li>
                 <li class="footer-info__item footer-info__item--long item column">
                     <h4 class="column__title">Stay connected</h4>
-                    <ul class="header-bottom-nav__social header-bottom-nav__social--black social">
+                    <ul class="column__social social--black social">
                         <li class="social__item item item-social">
                             <a href="#" class="item-social__link link icon icon-twitter"></a>
                         </li>
                         <li class="social__item item item-social"><a href="#" class="item-social__link link icon icon-facebook"></a> </li>
                         <li class="social__item item item-social"><a href="#" class="item-social__link link icon icon-pinterest-circled"></a> </li>
                         <li class="social__item item item-social"><a href="#" class="item-social__link link icon icon-instagram"></a> </li>
+                        <li class="social__item item item-social"><a href="#" class="item-social__link link icon icon-wifi"></a> </li>
                     </ul>
+                    <p class="column__subscriber">Subscriber <span>in</span> our news letter</p>
+                    <form  class="footer-info-block form" action="#" method="get">
+                        <label class="form__label" for="email"></label>
+                        <input class="form__input" placeholder="Enter Your Email Address" id="email">
+                        <button type="submit" class="form__button">Subscribe</button>
+                    </form>
                 </li>
             </ul>
+
         </div>
-        <div class="footer__bottom"></div>
+        <div class="footer__bottom bottom-copyright section-wrapper">
+            <a class="bottom-copyright__link" href="#"><span class="bottom-copyright__up"></span></a>
+            <p class="bottom-copyright__elem">&copy;2015  Shopia  Fashion Store Shopify.
+                All Rights Reserved. Ecommerce Software by Shopify.
+                Designed by  MoccaLabs.com</p>
+            <ul class="credit-cart">
+                <li class="credit-card__item item card"><i class="cart__item fa fa-cc-mastercard" aria-hidden="true"></i></li>
+                <li class="credit-card__item item card"><i class="cart__item fa fa-cc-visa" aria-hidden="true"></i></li>
+                <li class="credit-card__item item card"><i class="cart__item fa fa-cc-mastercard" aria-hidden="true"></i></li>
+                <li class="credit-card__item item card"><i class="cart__item fa fa-cc-visa" aria-hidden="true"></i></li>
+            </ul>
+
+
+        </div>
 
     </footer>
 </div>

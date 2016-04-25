@@ -2,8 +2,6 @@
 @import "./base/fonts.scss";
 @import "./component/_header";
 
-
-
 html,
 body,
 .wrapper {
@@ -14,8 +12,7 @@ body,
 
 .wrapper {
   position: relative;
-  max-width: 1400px;
-  margin: auto;
+  width: 100%;
 }
 
 .content {
