@@ -1,0 +1,53 @@
+
+.collection {
+  padding: 0 40px;
+}
+
+.collection__item {
+  position: relative;
+  width:  23.5%;
+  margin: 1% 1% 0 0;
+}
+
+.collection__item:last-child {
+  margin-right: 0;
+}
+
+.collection-block {
+  position: relative;
+}
+
+.collection-block__picture {
+  width: 100%;
+}
+
+.collection-block__sale {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 60px;
+  height: 60px;
+  background: $color-sale;
+  @include border-radius(50%);
+  font-size: 22px;
+  text-align: center;
+  line-height: 2.4;
+  color: #fff;
+}
+
+.collection-block__per {
+  font-size: 11px;
+}
+
+
+@media screen and (max-width: 900px){
+
+  .collection__item {
+    width: 30%;
+    margin-right: 2%;
+  }
+
+  .collection__item :nth-child(3n+3){
+    margin-right: 0;
+  }
+}
