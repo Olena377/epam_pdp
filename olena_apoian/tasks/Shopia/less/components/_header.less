@@ -10,7 +10,6 @@
   }
   &__call {
     position: relative;
-    float: left;
     padding-left: 20px;
   }
   &__call:before {
@@ -24,23 +23,23 @@
     font-size: 11px;
     line-height: 18px;
   }
-  &__nav {
+  &__right-side {
     float: right;
   }
-  &__left{
+  &__left-side{
     float: left;
   }
-  &__select {
-    width: 90px;
-    margin-left: 50px;
-    padding: 10px 5px;
-    font-size: 12px;
-    background-color: @color-prime;
-    color: @color-main;
-  }
-  &__options {
-    width: 90px;
-  }
+}
+.select {
+  width: 90px;
+  margin-left: 50px;
+  padding: 10px 5px;
+  font-size: 12px;
+  background-color: @color-prime;
+  color: @color-main;
+}
+.select__options {
+  width: 90px;
 }
 .logo {
   position: absolute;
@@ -49,7 +48,7 @@
 .navigation {
   &__item {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 5px;
   }
   &__item:last-child {
     margin-right: 0;
@@ -58,7 +57,7 @@
     position: relative;
     width: 34px;
     height: 34px;
-    .border(2px, solid, @color-side);
+    .border(3px, solid, @color-side);
     .border-radius(50%);
   }
   &__item--small-text {
@@ -88,6 +87,7 @@
     top: 7px;
     left: 10px;
   }
+
   &__item--circle:hover {
      .scale(1.3);
   }
