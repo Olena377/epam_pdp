@@ -1,0 +1,5 @@
+*.txt
+*.md
+/node_modules/
+.sass-cache
+.idea

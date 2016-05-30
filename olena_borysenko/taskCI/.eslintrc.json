@@ -1,0 +1,17 @@
+{
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": "eslint:recommended",
+  "rules": {
+    "no-console": 2,
+    "no-alert": 2,
+    "comma-style": 2,
+    "no-multiple-empty-lines": 2,
+    "eqeqeq": "off",
+    "curly": 2,
+    "quotes": ["error", "single"]
+  }
+}
+

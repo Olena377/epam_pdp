@@ -1,6 +1,18 @@
 @import "./base/normolise.css";
 @import "./base/fonts.scss";
-@import "./component/_header";
+@import "./base/variables.scss";
+@import "./component/_mixin.scss";
+@import "./component/_header.scss";
+@import "./component/_buttons.scss";
+@import "./component/_slider.scss";
+@import "./component/_brand.scss";
+@import "./component/_collection.scss";
+@import "./component/_custom-info.scss";
+@import "./component/_footer.scss";
+@import "./component/_handPicked.scss";
+@import "./component/_support.scss";
+@import "./component/_title.scss";
+
 
 html,
 body,
@@ -18,14 +30,6 @@ body,
 .content {
   box-sizing: border-box;
   min-height: 100%;
-}
-
-#footer {
-  height: 450px;
-  margin-top: -80px;
-  padding-top: 4em;
-  padding-bottom: 1em;
-  color: #959798;
 }
 
 

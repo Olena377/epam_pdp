@@ -1,0 +1,125 @@
+
+.support {
+  padding: 35px 40px;
+}
+
+.support__item {
+  position: relative;
+  width: 30%;
+  margin-right: 20px;
+  padding: 16px 0 16px 10px;
+  background: $color-light;
+  z-index: 2;
+}
+.support__item:last-child {
+  margin-right: 0;
+}
+.support__item:after {
+  position: absolute;
+  top: 0;
+  right: -29px;
+  display: inline-block;
+  border-top: 45px solid transparent;
+  border-left: 30px solid $color-light;
+  border-bottom: 45px solid transparent;
+  content: " ";
+}
+
+.support-feature {
+  &__info {
+    display: inline-block;
+    vertical-align: top;
+  }
+  &__icon {
+    display: inline-block;
+    font-size: 48px;
+  }
+  &__title {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 25px;
+  }
+  &__text {
+    font-size: 14px;
+  }
+
+}
+
+.support__item--center {
+  width: 29%;
+  padding: 15px 2.5%;
+  background: $color-dark;
+  z-index: 1;
+}
+
+
+.support__item--invert:after {
+  border: 45px solid transparent;
+  border-right: 30px solid $color-light;
+  right: 100%;
+}
+
+.support__item--center:after {
+  left: 0;
+  border-left: 30px solid #fff;
+}
+
+
+.support__item--center:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  border: 45px solid transparent;
+  border-right: 30px solid #fff;
+  content: " ";
+}
+
+
+@media screen and (max-width: 1200px) {
+  .support {
+    padding: 10px 40px;
+  }
+  .support__item {
+    width: 29.1%;
+  }
+  .support-feature__title {
+    font-size: 20px;
+  }
+  .support-feature__icon {
+    font-size: 40px;
+  }
+  .support__item--center:before {
+    border: 40px solid transparent;
+    border-right: 30px solid #fff;
+  }
+  .support__item:after {
+    border-top: 35px solid transparent;
+  }
+  .support__item--invert:after {
+    border: 38px solid transparent;
+    border-right: 30px solid $color-light;
+  }
+  .support__item {
+    margin-right: 15px;
+  }
+  .support-feature__title {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .support__item {
+    display: block;
+    width: 60%;
+    margin: 20px auto;
+    padding: 10px 0;
+  }
+  .support__item:last-child {
+    margin: auto;
+  }
+  .support__item:after,
+  .support__item:before {
+    display: none;
+  }
+}

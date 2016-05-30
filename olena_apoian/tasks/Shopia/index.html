@@ -15,15 +15,17 @@
         <header class="header">
           <div class="header__top">
               <div class="container clearfix">
-                  <p class="header__call header__call--small">Call +001 555 801</p>
-                  <nav class="navigation header__nav navigation--uppercase">
+                  <a href="tel:+001 555 801">
+                      <p class="header__call header__call--small header__left-side">Call +001 555 801</p>
+                  </a>
+                  <nav class="navigation  header__right-side navigation--uppercase">
                       <ul class="navigation__list">
-                          <li class="navigation__item navigation__item--small-text navigation__item--margin--right">
-                              <a href="#" class="navigation__link navigation__link--brown navigation__link--line">WELCOME MSG!</a>
+                          <li class="navigation__item navigation__item--small-text navigation__item--margin">
+                              <a href="#" class="navigation__link navigation__link--brown navigation__link--line">welcome msg!</a>
                           </li>
-                          <li class="navigation__item navigation__item--small-text navigation__item--margin--right">
+                          <li class="navigation__item navigation__item--small-text navigation__item--margin">
                               <a href="#" class="navigation__link navigation__link--brown navigation__link--line">my account</a></li>
-                          <li class="navigation__item navigation__item--small-text navigation__item--margin--right">
+                          <li class="navigation__item navigation__item--small-text navigation__item--margin">
                               <a href="#" class="navigation__link navigation__link--brown navigation__link--line">my wishlist</a>
                           </li>
                           <li class="navigation__item navigation__item--small-text">
@@ -35,7 +37,7 @@
           </div>
             <div class="header__bottom">
                 <div class="container clearfix">
-                    <nav class="navigation header__left navigation--font navigation--capitalize">
+                    <nav class="navigation header__left-side navigation--font navigation--capitalize">
                         <ul class="navigation__list">
                             <li class="navigation__item">
                                 <a href="#" class="navigation__link navigation__link--black">home</a>
@@ -51,24 +53,24 @@
                         </ul>
                     </nav>
                     <a href="index.html" class="logo" id="logo">
-                        <img src="img/logo.png">
+                        <img src="img/logo.png" alt="Shopia">
                     </a>
-                    <select class="header__select header__nav">
-                        <option class="header__options" selected>RUPIAH</option>
-                        <option class="header__options">Short Option</option>
-                        <option class="header__options">Short Option</option>
+                    <select class="select header__right-side">
+                        <option class="select__options" selected>Rupiah</option>
+                        <option class="select__options">Short Option</option>
+                        <option class="select__options">Short Option</option>
                     </select>
-                    <nav class="navigation header__nav">
+                    <nav class="navigation  header__right-side">
                         <ul class="navigation__list">
-                            <li class="navigation__item navigation__item--circle">
+                            <li class="navigation__item navigation__item--circle item--effect">
                                 <a href="#" class="navigation__link navigation__abs navigation__link--straw"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                             </li>
-                            <li class="navigation__item navigation__item--circle">
+                            <li class="navigation__item navigation__item--circle item--effect">
                                 <a href="#"  class="navigation__link navigation__abs navigation__link--straw"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <li class="navigation__item navigation__item--circle">
+                            <li class="navigation__item navigation__item--circle item--effect">
                                 <a href="#" class="navigation__link navigation__abs navigation__link--straw"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
                             </li>
-                            <li class="navigation__item navigation__item--circle">
+                            <li class="navigation__item navigation__item--circle item--effect">
                                 <a href="#" class="navigation__link navigation__abs navigation__link--straw"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                             </li>
                         </ul>
@@ -78,30 +80,32 @@
         </header>
         <main>
             <section class="section">
-                <ul class="slider">
-                    <li class="slider__item">
-                        <div class="slider__wrapper"></div>
-                        <img src="img/bg.jpg" class="slider__image" alt="mide-season sale">
-                        <a href="#" class="button slider__button button--straw">SHOP NOW</a>
-                        <ul class="slider-navigation">
-                            <li class="slider-navigation__item">
-                                <a href="#">
-                                    <div class="slider-navigation__diamond"></div>
-                                </a>
-                            </li>
-                            <li class="slider-navigation__item">
-                                <a href="#">
-                                    <div class="slider-navigation__diamond"></div>
-                                </a>
-                            </li>
-                            <li class="slider-navigation__item">
-                                <a href="#">
-                                    <div class="slider-navigation__diamond"></div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                <div class="slider__wrapper">
+                    <ul class="slider">
+                        <li class="slider__item">
+                            <div class="wrappers" aria-hidden="true"></div>
+                            <img src="img/bg.jpg" class="slider__image" alt="mide-season sale">
+                            <a href="#" class="button slider__button button--straw">SHOP NOW</a>
+                            <ul class="slider__navigation">
+                                <li class="slider__navigation-item">
+                                    <a href="#">
+                                        <div class="slider__navigation-diamond"></div>
+                                    </a>
+                                </li>
+                                <li class="slider__navigation-item">
+                                    <a href="#">
+                                        <div class="slider__navigation-diamond"></div>
+                                    </a>
+                                </li>
+                                <li class="slider__navigation-item">
+                                    <a href="#">
+                                        <div class="slider__navigation-diamond"></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </section>
             <div class="container">
                 <section class="section section__menu">
@@ -128,7 +132,11 @@
                     </ul>
                 </section>
                 <section class="section">
-                    <h2 class="section__heading">HandPicked</h2>
+                    <div class="section__title">
+                        <div class="section__line"></div>
+                        <h2 class="section__heading">HandPicked</h2>
+                        <div class="section__line"></div>
+                    </div>
                     <ul class="product-list">
                         <li class="product-list__item product-list__item--right">
                             <div class="product-list__wrapper product-list__wrapper--padding">
@@ -172,62 +180,83 @@
                     </ul>
                 </section>
                 <section class="section">
-                    <h2 class="section__heading">Summer Collection</h2>
+                    <div class="section__title">
+                        <div class="section__line"></div>
+                        <h2 class="section__heading">Summer Collection</h2>
+                        <div class="section__line"></div>
+                    </div>
                     <ul class="collection">
-                        <li class="collection__item collection__item--right collection__item--bottom">
+                        <li class="collection__item collection__item--right collection__item--bottom product-list__wrapper">
                             <div class="circle">
                                 <span class="circle__text">20<span class="circle__percent"> %</span></span>
                             </div>
                             <img src="img/item.jpg" class="collection_image" alt="Jacket">
-                            <div class="collection__wrapper"></div>
-                            <a href="#" class="collection__button">+ADD TO CART</a>
+                            <div class="product-list__container">
+                                <a href="#" class="product-list__button collection__button">+ADD TO CART</a>
+                            </div>
+                            <div class="product-lines"></div>
                         </li>
-                        <li class="collection__item collection__item--right collection__item--bottom">
+                        <li class="collection__item collection__item--right collection__item--bottom product-list__wrapper">
                             <div class="circle">
-                                <span class="circle__text">60<span class="circle__percent"> %</span></span>
+                                <span class="circle__text">20<span class="circle__percent"> %</span></span>
                             </div>
                             <img src="img/item.jpg" class="collection_image" alt="Jacket">
-                            <div class="collection__wrapper"></div>
-                            <a href="#" class="collection__button">+ADD TO CART</a>
+                            <div class="product-list__container">
+                                <a href="#" class="product-list__button collection__button">+ADD TO CART</a>
+                            </div>
+                            <div class="product-lines"></div>
                         </li>
-                        <li class="collection__item collection__item--right collection__item--bottom">
+                        <li class="collection__item collection__item--right collection__item--bottom product-list__wrapper">
                             <div class="circle">
-                                <span class="circle__text">35<span class="circle__percent"> %</span></span>
+                                <span class="circle__text">20<span class="circle__percent"> %</span></span>
                             </div>
                             <img src="img/item.jpg" class="collection_image" alt="Jacket">
-                            <div class="collection__wrapper"></div>
-                            <a href="#" class="collection__button">+ADD TO CART</a>
+                            <div class="product-list__container">
+                                <a href="#" class="product-list__button collection__button">+ADD TO CART</a>
+                            </div>
+                            <div class="product-lines"></div>
                         </li>
-                        <li class="collection__item collection__item--bottom">
-
+                        <li class="collection__item collection__item--bottom product-list__wrapper">
                             <img src="img/item.jpg" class="collection_image" alt="Jacket">
-                            <div class="collection__wrapper"></div>
-                            <a href="#" class="collection__button">+ADD TO CART</a>
+                            <div class="product-list__container">
+                                <a href="#" class="product-list__button collection__button">+ADD TO CART</a>
+                            </div>
+                            <div class="product-lines"></div>
                         </li>
-                        <li class="collection__item collection__item--right">
+                        <li class="collection__item collection__item--right product-list__wrapper">
                             <img src="img/item.jpg" class="collection_image" alt="Jacket">
-                            <div class="collection__wrapper"></div>
-                            <a href="#" class="collection__button">+ADD TO CART</a>
+                            <div class="product-list__container">
+                                <a href="#" class="product-list__button collection__button">+ADD TO CART</a>
+                            </div>
+                            <div class="product-lines"></div>
                         </li>
-                        <li class="collection__item collection__item--right">
+                        <li class="collection__item collection__item--right product-list__wrapper">
                             <img src="img/item.jpg" class="collection_image" alt="Jacket">
-                            <div class="collection__wrapper"></div>
-                            <a href="#" class="collection__button">+ADD TO CART</a>
+                            <div class="product-list__container">
+                                <a href="#" class="product-list__button collection__button">+ADD TO CART</a>
+                            </div>
+                            <div class="product-lines"></div>
                         </li>
-                        <li class="collection__item collection__item--right">
+                        <li class="collection__item collection__item--right product-list__wrapper">
                             <img src="img/item.jpg" class="collection_image" alt="Jacket">
-                            <div class="collection__wrapper"></div>
-                            <a href="#" class="collection__button">+ADD TO CART</a>
+                            <div class="product-list__container">
+                                <a href="#" class="product-list__button collection__button">+ADD TO CART</a>
+                            </div>
+                            <div class="product-lines"></div>
                         </li>
-                        <li class="collection__item">
-                            <img src="img/item.jpg" class="collection_image" alt="Jacket">
-                            <div class="collection__wrapper"></div>
-                            <a href="#" class="collection__button">+ADD TO CART</a>
-                        </li>
+                        <!--<li class="collection__item">-->
+                            <!--<img src="img/item.jpg" class="collection_image" alt="Jacket">-->
+                            <!--<div class="collection__wrapper"></div>-->
+                            <!--<a href="#" class="collection__button">+ADD TO CART</a>-->
+                        <!--</li>-->
                     </ul>
                 </section>
                 <section class="section">
-                    <h2 class="section__heading">Our Brand</h2>
+                    <div class="section__title">
+                        <div class="section__line"></div>
+                        <h2 class="section__heading">Our Brand</h2>
+                        <div class="section__line"></div>
+                    </div>
                     <ul class="brand">
                         <li class="brand__item brand__item--right">
                             <a href="#" class="brand__image brand__image--bakery"></a>
@@ -251,9 +280,13 @@
                 </section>
             </div>
             <section class="section">
-                <h2 class="section__heading">Customers Says</h2>
+                <div class="section__title">
+                    <div class="section__line"></div>
+                    <h2 class="section__heading">Customers Says</h2>
+                    <div class="section__line"></div>
+                </div>
                 <div class="banner banner--bgstraw">
-                    <div class="slider__wrapper"></div>
+                    <div class="wrappers"></div>
                     <div class="container">
                         <ul class="people">
                             <li class="people__item people__item--right clearfix">
@@ -325,20 +358,21 @@
                     </li>
                     <li class="top-footer__item top-footer__item--big">
                         <h3 class="top-footer-heading">STAY CONNECTED</h3>
-                        <ul class="navigation__list">
-                            <li class="navigation__item navigation__item--circle navigation__item--circlewhite">
-                                <a href="#" class="navigation__link navigation__abs navigation__link--black"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <ul class="socials">
+                            <li class="socials__item">
+                                <a href="#" class="socials__link socials__link--effect"><i class="fa fa-facebook fa-2x socials__pic" aria-hidden="true"></i></a>
                             </li>
-                            <li class="navigation__item navigation__item--circle navigation__item--circlewhite">
-                                <a href="#" class="navigation__link navigation__abs navigation__link--black"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <li class="navigation__item navigation__item--circle navigation__item--circlewhite">
-                                <a href="#" class="navigation__link navigation__abs navigation__link--black"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link socials__link--effect"><i class="fa fa-twitter fa-2x socials__pic" aria-hidden="true"></i></a>
                             </li>
-                            <li class="navigation__item navigation__item--circle navigation__item--circlewhite">
-                                <a href="#" class="navigation__link navigation__abs navigation__link--black"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link socials__link--effect"><i class="fa fa-pinterest-p fa-2x socials__pic" aria-hidden="true"></i></a>
                             </li>
-                            <li class="navigation__item navigation__item--circle navigation__item--circlewhite">
-                                <a href="#" class="navigation__link navigation__abs navigation__link--black"><i class="fa fa-rss" aria-hidden="true"></i></a>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link socials__link--effect"><i class="fa fa-instagram fa-2x socials__pic" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link socials__link--effect"><i class="fa fa-rss fa-2x socials__pic" aria-hidden="true"></i></a>
                             </li>
                         </ul>
                         <p class="top-footer__text">SUBSCRIBE   <span class="top-footer-span">in</span>  OUR  NEWS  LETTER</p>

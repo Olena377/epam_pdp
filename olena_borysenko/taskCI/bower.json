@@ -1,0 +1,29 @@
+{
+  "name": "cdp-gulp",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://github.com/IllusionMH/cdp-gulp",
+  "authors": [
+    "Andrii Dieiev",
+    "Valerii Pavlov"
+  ],
+  "description": "Step-by-step example of introducing Gulp into project",
+  "keywords": [
+    "gulp",
+    "tutorial",
+    "introduction",
+    "cdp",
+    "epam"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}

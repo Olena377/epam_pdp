@@ -1,0 +1,60 @@
+
+.brand-block {
+  margin: 80px 0;
+}
+
+.brand-block__item {
+  width: 15%;
+  margin-right: 1.5%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+  .brand-item__link {
+    height: 100px;
+    width: 160px;
+    background: url("../image/brand1.png") no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+    display: block;
+  }
+  .bakere {
+    background-position: 20px 0;
+  }
+  .lavalier {
+    background-position: -173px 0;
+  }
+  .narvest {
+    background-position: -405px 0;
+  }
+  .landlock {
+    background-position: -622px 0;
+  }
+  .spectrum {
+    background-position: -832px 0;
+  }
+  .home-energy {
+    background-position: -1028px 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .brand-block__item,
+  .footer-info__item {
+    width: 30.5%;
+    margin-right: 2%;
+  }
+
+  .brand-block__item:nth-child(3n+3),
+  .footer-info__item:nth-child(3n+3) {
+    margin-right: 0;
+  }
+
+  .brand-item__link {
+    margin: auto;
+    padding: 20px 0;
+  }
+  .brand-block {
+    margin: 0;
+  }
+}

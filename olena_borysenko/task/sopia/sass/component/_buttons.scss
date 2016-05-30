@@ -1,0 +1,114 @@
+.feature-block__bnt {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  margin-left: -55px;
+}
+
+.btn-shop {
+  display: none;
+  width: 110px;
+  padding: 15px 0;
+  background: $color-marker-light;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  border: none;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.btn-shop:hover {
+  color: $font-dark;
+  background: #ccc;
+}
+
+.slider-item__btn {
+  position: absolute;
+  display: block;
+  width: auto;
+  left: 50%;
+  bottom: 12%;
+  margin-left: -15%;
+}
+
+.collection-block__btn {
+  position: absolute;
+  display: none;
+  width: 92px;
+  bottom: 15px;
+  left: 50%;
+  margin-left: -46px;
+  padding: 10px 0;
+  line-height: 20px;
+  background: $color-marker-light;
+  border: none;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 2;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: -40px;
+    content: " ";
+    border: 20px solid transparent;
+    border-right: 20px solid $color-marker-light;
+    border-bottom: 20px solid $color-marker-light;
+  }
+
+  &:after {
+    position: absolute;
+    top: 0;
+    right: -40px;
+    content: " ";
+    border: 20px solid transparent;
+    border-bottom: 20px solid $color-marker-light;
+    border-left: 20px solid $color-marker-light;
+  }
+  &:hover {
+    color: $font-dark;
+  }
+}
+
+.feature-block:hover .collection-block__btn {
+  display: block;
+}
+
+.collection-block__btn--black {
+  background: $color-marker-dark;
+  &:hover {
+    color: #fff;
+  }
+  &:after {
+    border-bottom: 20px solid $color-marker-dark;
+    border-left: 20px solid $color-marker-dark;
+  }
+  &:before {
+    border-right: 20px solid $color-marker-dark;
+    border-bottom: 20px solid $color-marker-dark;
+  }
+}
+
+.btn-shop--big {
+  padding: 15px 20px;
+  margin-left: -80px;
+  margin-bottom: 7%;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 1100px){
+  .btn-shop--big {
+    font-size: 16px;
+    margin-left: -60px;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .collection-block__btn {
+    bottom: 4px;
+  }
+}
+
