@@ -1,5 +1,6 @@
+@import "_config.scss";
+@import "_helpers.scss";
+@import "_utilities.scss";
+@import "_reset.scss";
+@import "_base.scss";
 @import "_header.scss";
-body {
-    font-size: 100%;
-    background: url(../img/repeater.jpg);
-}

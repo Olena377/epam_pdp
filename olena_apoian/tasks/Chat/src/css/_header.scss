@@ -1,6 +1,8 @@
-p {
-  color:red;
+#header {
+  background: $color-primary;
 }
-.blue {
-  background: blue;
+.user_name {
+  font-size: $base__font-size;
+  color: $color-secondary;
+  text-transform: uppercase;
 }
