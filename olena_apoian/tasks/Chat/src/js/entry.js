@@ -22,4 +22,7 @@ const Container = React.createClass({
     }
 });
 
-React.render(<Container />, document.getElementsByTagName('body')[0]);
+//React.render(<Container />, document.getElementsByTagName('body')[0]);
+ReactDOM.render(
+  <Container />, document.getElementById("container")
+);

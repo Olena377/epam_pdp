@@ -25,11 +25,9 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(jpe?g|png|gif|svg)$/i,
-                loaders: [
-                    'url?limit=8192',
-                    'img'
-                ]
+                test: /\.(jpeg|png|gif|svg|ttf|eot|woff|woff2|otf)/i,
+                exclude: /(node_modules|bower_components)/,
+                loader: 'url-loader?limit=100000'
             },
             {
                 test: /\.jsx?$/,
