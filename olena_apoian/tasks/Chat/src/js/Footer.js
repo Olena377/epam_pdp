@@ -8,9 +8,8 @@ class Footer extends React.Component {
     render(){
         let userName = "lena";
         return (
-            <footer>
-                <h2 className="user_name">{userName}</h2>
-                <i className="fa fa-camera-retro fa-5x"></i>
+            <footer className="footer">
+               
             </footer>
 
         )

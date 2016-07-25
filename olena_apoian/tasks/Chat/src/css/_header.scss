@@ -6,3 +6,19 @@
   color: $color-secondary;
   text-transform: uppercase;
 }
+
+.header {
+  display: table;
+  padding: 2.5rem 0;
+}
+.header__icon--left,
+.header__icon--right,
+.user_name {
+  float:none;
+  display: table-cell;
+  vertical-align: middle;
+}
+.header__icon--left {
+  padding-left: 20px;
+}
+

@@ -1,6 +1,6 @@
 # Demo webpack and React app
 
-This is the entire code repository for the Chat application PDP project.
+This is the entire code repository for the [Getting started with webpack and React, ES6 style](http://humaan.com/getting-started-with-webpack-and-react-es6-style/) article on the Humaan blog.
 
 ## In use:
 
@@ -11,6 +11,4 @@ This is the entire code repository for the Chat application PDP project.
 - ES6 syntax
 - hot module loaders
 
-##To start project follow the next steps:
-    - run 'npm install'
-    - run 'npm start'
+Feel free to post an issue if you find something amiss.

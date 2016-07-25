@@ -8,8 +8,11 @@ class Header extends React.Component {
     render(){
         let userName = "kirsten mckellar";
         return (
-            <header>
+
+            <header className="header">
+                <p className="fa fa-arrow-left fa-lg header__icon--left"></p>
                 <h2 className="user_name">{userName}</h2>
+                <p className="fa fa-ellipsis-h fa-lg header__icon--right"></p>
             </header>
 
         )
