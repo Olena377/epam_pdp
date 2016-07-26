@@ -18,42 +18,32 @@ $font-weight--ultra-bold : 900;
 
 // Descriptive Base Colors
 
-$white : #fff;
-$black : #0b0b0b;
-$grey  : #797e83;
-
-$outer-space: #293037;
+$white          : #fff;
+$black          : #000;
+$grey           : #797e83;
+$light-grey     : rgba(0,0,0,0.1);
+$athens-gray    : #EBEEF3;
+$azure-radiance : #0084FF;
+$outer-space    : #293037;
 
 // Color Usage
 
 $color-primary   : $white;
 $color-secondary : $outer-space;
-
-
-// Color Palette Modifiers
-
-$palettes: (
-        grey: (
-                xx-light : lighten($grey, 43%),
-                x-light  : lighten($grey, 35%),
-                light    : lighten($grey, 12%),
-                base     : $grey,
-                dark     : darken($grey, 8%),
-                x-dark   : darken($grey, 16%)
-        ),
-        black: (
-                light    : lighten($black, 10%),
-                base     : $black,
-                dark     : darken($black, 10%)
-        )
-);
-
+$color-border    : $light-grey;
+$color-bg        : $athens-gray;
+$color-msg        : $azure-radiance;
 
 // Text
 
 $base__font-size : 16px;
+$small__font-size : 14px;
 $base__line      : 24px;
 $letter-space    : 1px;
+
+//Border
+
+$border--light: 1px solid $color-border;
 
 // Border radius
 
@@ -63,6 +53,11 @@ $br--round       : 50%;
 // Transitions
 
 $trns-duration   : .3s;
+
+
+// Opacity
+
+$half-opacity: 0.56;
 
 // Path to Assets
 

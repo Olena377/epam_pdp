@@ -30,30 +30,12 @@ $with-layout: (
   gutter-position: inside,
   global-box-sizing: border-box,
 );
-$middle: 600px;
+$middle: 1200px;
 /* Susy Grid Rules */
 body {
-  @include show-grid(12);
+  //@include show-grid(12);
 }
-.header {
-  @include layout($with-layout);
-  @include span(12);
-}
-.header__icon--left {
-  @include span(1);
-}
-.header__icon--right {
-  @include span(1 at 11);
-}
-.user_name {
-  @include span(5 at 3);
-}
-@include susy-breakpoint($middle, 12) {
-  .user_name {
 
-    display:none; //doesn't work but "visibility: hidden" works
-  }
-}
 //.container {
 //  @include container();
 //  // Using Compass Vertical Rhythm

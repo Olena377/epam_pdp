@@ -9,7 +9,7 @@ class Footer extends React.Component {
         let userName = "lena";
         return (
             <footer className="footer">
-               
+
             </footer>
 
         )
