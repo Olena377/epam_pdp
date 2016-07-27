@@ -1,0 +1,81 @@
+.profile {
+  display: none;
+}
+@include susy-breakpoint($middle, 12) {
+  .profile {
+    display: block;
+    @include span(3);
+    height: 100vh;
+    background: $color-primary;
+  }
+
+  .profile-settings {
+    @include span(12);
+    display: table;
+    border-bottom: $border--light;
+    &__icon {
+      @include span(2 first);
+      float: none;
+      display: table-cell;
+      position: relative;
+    }
+    &__icon:after {
+      content: '\f111';
+      position: absolute;
+      top: 20px;
+      left: 23px;
+      color: $color-msg;
+      font-size: 10px;
+    }
+    &__name {
+      @include span(4 last);
+      float: none;
+      display: table-cell;
+    }
+  }
+  .profile-details {
+    @include span(12);
+    margin: 0 auto;
+    padding: 2rem 0;
+    text-align: center;
+    border-bottom: $border--light;
+    &__icon--left,
+    &__icon--right{
+      @include span(2);
+      color: $color-secondary;
+      opacity: $half-opacity;
+    }
+    &__icon--left:hover,
+    &__icon--right:hover,
+    &__icon--left:active,
+    &__icon--right:active {
+      color: $color-msg;
+    }
+    &__block {
+      @include span(8);
+      margin-top: 1rem;
+    }
+  }
+  .profile-list {
+    @include span(12);
+    margin: 0 auto;
+    padding: 2rem 0;
+    text-align: center;
+    &__item {
+      @include span(10);
+      margin-left: 2rem;
+      padding: 1rem 0;
+      border-bottom: $border--light;
+    }
+    &__heading {
+      @include span(5);
+      text-align: left;
+    }
+    &__value {
+      @include span(5);
+      text-align: right;
+    }
+  }
+
+
+}

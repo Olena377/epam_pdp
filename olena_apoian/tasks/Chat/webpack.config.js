@@ -25,7 +25,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(jpeg|png|gif|svg|ttf|eot|woff|woff2|otf)/i,
+                test: /\.(png|jpg|svg|ttf|eot|woff|woff2|otf)/i,
                 exclude: /(node_modules|bower_components)/,
                 loader: 'url-loader?limit=100000'
             },

@@ -1,34 +1,22 @@
-#header {
+//Header grid for mobile version
+
+.header {
+  @include span(12);
+  @extend %clearfix;
+  display: table;
+  padding: 2.5rem 0;
   background: $color-primary;
   color: $color-secondary;
+  border-bottom: $border--light;
 }
-.user_name {
+.header__name {
   font-size: $small__font-size;
   font-weight: $font-weight--bold;
   text-transform: uppercase;
 }
-.header {
-  @include layout($with-layout);
-  @include span(12);
-}
-.header__icon--left {
-  @include span(1);
-}
-.header__icon--right {
-  @include span(1 at 11);
-}
-.user_name {
-  @include span(5 at 3);
-}
-.header {
-  display: table;
-  padding: 2.5rem 0;
-  border-bottom: $border--light;
-}
 .header__icon--left,
 .header__icon--right,
-.user_name,
-.another-name {
+.header__name {
   float:none;
   display: table-cell;
   vertical-align: middle;
@@ -40,56 +28,48 @@
   font-weight: $font-weight--light;
   text-transform: none;
 }
-.header__nav,
-.header__message,
-.another-name {
-  display: none;
-}
 .header__item {
   display: inline-block;
   border-left: $border--light;
-}
-.header__item:last-child {
-  background: $color-primary;
-}
-.header__anchor:hover,
-.header__anchor:active {
-  background: $color-bg;
-  color: $color-msg;
 }
 .header__anchor {
   padding: 1em;
   color: $color-secondary;
   opacity: $half-opacity;
 }
+.header__anchor:hover,
+.header__anchor:active {
+  color: $color-msg;
+}
+.header__nav,
+.header__message,
+.another-name {
+  display: none;
+}
+
 @include susy-breakpoint($middle, 12) {
   .header__icon--left,
   .header__icon--right {
     display:none;
   }
   .header {
+    @include span(9);
+    @include layout($new-layout);
     padding: 0;
-    background: $color-primary;
+    background: $color-bg;
   }
   .header__message {
     display: inline-block;
   }
   .header__nav {
+    @include span(15 last);
     display: block;
   }
-  .user_name {
-    padding-left: 2rem;
-  }
-  .another-name {
-    display: table-cell;
-    background: $color-primary;
-  }
-  .user_name {
-    @include span(3);
+  .header__name {
+    @include span(9 first);
     display: table-cell;
     float: none;
+    padding-left: 2rem;
   }
-
-
 }
 

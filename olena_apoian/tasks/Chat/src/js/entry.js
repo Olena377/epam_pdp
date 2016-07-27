@@ -7,6 +7,7 @@ import '../css/master.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from './Header';
+import UserProfile from './UserProfile';
 import Footer from './Footer';
 
 // Render!
@@ -16,13 +17,13 @@ const Container = React.createClass({
         return (
             <div className='container'>
                 <Header />
+                <UserProfile />
                 <Footer />
             </div>
         )
     }
 });
 
-//React.render(<Container />, document.getElementsByTagName('body')[0]);
 ReactDOM.render(
   <Container />, document.getElementById("container")
 );

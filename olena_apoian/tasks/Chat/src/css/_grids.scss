@@ -6,7 +6,7 @@
 
 $susy: (
         columns: 12,
-        gutters: 1/4,
+        gutters: 0/4,
         //container: 100em,
         math: fluid,
         output: float,
@@ -21,19 +21,19 @@ $susy: (
         )
 
 );
-$with-layout: (
-  columns: 12,
-  gutters: 0/4,
-//container: 100em,
+$new-layout: (
+  columns: 24,
+  gutters: 1/4,
   math: fluid,
   output: float,
   gutter-position: inside,
   global-box-sizing: border-box,
 );
+
 $middle: 1200px;
 /* Susy Grid Rules */
 body {
-  //@include show-grid(12);
+  @include show-grid(12);
 }
 
 //.container {
