@@ -6,9 +6,9 @@ import '../css/master.scss';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './Header';
-import UserProfile from './UserProfile';
-import Footer from './Footer';
+import Header from './../components/header/Header';
+import UserProfile from './../components/user-profile/UserProfile';
+import Footer from './../components/footer/Footer';
 
 // Render!
 
