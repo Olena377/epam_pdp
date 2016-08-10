@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+</head>
+<body>
+<div class="videoPlayerBox">
+    <video id="myVideo">
+        <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        <source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+        <source src="src/Big_Buck_Bunny_Trailer.webm" type="video/webm">
+        <p>
+            Your browser doesn't support HTML5 video.
+            <a href="src/Big_Buck_Bunny_Trailer.webm">Download</a> the video instead.
+        </p>
+    </video>
+    <div id="controls">
+        <a id="playpausebtn" class="fa fa-play"></a>
+        <input id="seekslider" type="range" min="0" max="100" value="0" step="1" style="display: none">
+        <div class="time">
+            <span id="currentTimeText"></span> / <span id="durationTimeText"></span>
+        </div>
+        <a id="muteBtn" class="fa fa-volume-up"></a>
+        <!--<a id="muteBtn">Mute</a>-->
+        <input id="volumeslider" type="range" min="0" max="100" value="50" step="1">
+        <a id="fullSreenBtn" class="fa fa-expand"></a>
+    </div>
+</div>
+<script src="player.js"></script>
+<script src="range.js"></script>
+</body>
+</html>
