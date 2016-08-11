@@ -1,0 +1,85 @@
+@import '~susy/sass/susy';
+@import "~breakpoint-sass";
+
+// Susy Grid Config
+// For more information: http://susydocs.oddbird.net/en/latest/settings/
+
+$susy: (
+        columns: 12,
+        gutters: 0/4,
+        math: fluid,
+        output: float,
+        gutter-position: inside,
+        global-box-sizing: border-box,
+
+        debug: (
+                image: show,
+                color: rgba(#66f, .5),
+                output: background,
+                toggle: top right,
+        )
+
+);
+
+$middle: 995px;
+
+/* Susy Grid Rules */
+body {
+  @include show-grid(12);
+}
+
+.header {
+  @include span(12);
+  display: table;
+  padding: 2.5rem 0;
+}
+.header__name {
+  text-transform: uppercase;
+}
+
+
+.wrapper {
+  @include span(12);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.wrapper__menu {
+  @include span(12);
+  height: 100%;
+  background: olive;
+}
+
+.wrapper__profile {
+  display: none;
+}
+
+.wrapper__chat {
+  @include span(12);
+  height: 100%;
+  background: #fff;
+}
+
+@include susy-breakpoint($middle, 12) {
+  .wrapper__menu,
+  .wrapper__profile {
+    @include span(3 of 12);
+    height: 100%;
+  }
+
+  .wrapper__profile {
+    @include last;
+  }
+
+  .wrapper__chat {
+    @include span(6);
+    height: 100%;
+  }
+
+  .wrapper__profile {
+    display: block;
+  }
+}

@@ -1,0 +1,110 @@
+.header__chat {
+  height: $header-height-mobile;
+}
+
+.header-chat__author {
+  @include span(8);
+  height: $header-height-mobile;
+}
+
+.header-chat__author p {
+  height: 100%;
+  margin: 0;
+  padding: 0 20px;
+  line-height: $header-height-mobile;
+}
+
+.header-chat__menu {
+  height: 50px;
+  @include span(12);
+  @include last;
+}
+
+.icon-center {
+  font-size: $medium;
+  text-align: center;
+  color: $grey;
+}
+
+.icon-center i {
+  line-height: $header-height-mobile;
+}
+
+.header-chat__back,
+.header-chat__ellipsis {
+  @include span(2);
+  &:hover {
+    background: #ccc;
+    cursor: pointer;
+  }
+}
+
+.header-chat__ellipsis {
+  @include last;
+}
+
+.menu-chat {
+  padding: 0px;
+  margin: 0;
+}
+
+.menu-chat__item {
+  @include span(12);
+  background: #ccc;
+  padding: 0;
+  height: $header-height-mobile;
+  font-size: 18px;
+  list-style: none;
+  border-bottom: $light-border;
+  box-sizing: border-box;
+}
+
+.menu-chat__item:first-child {
+  border-top: $light-border
+}
+
+@include susy-breakpoint($middle, 12) {
+  .header__chat {
+    height: $header-height-desktop;
+    background: #fff;
+  }
+
+  .header-chat__back {
+    text-align: center;
+    padding: ($header-height-desktop - $medium) 0;
+  }
+
+  .icon-center i {
+    line-height: $header-height-desktop;
+  }
+
+  .header-chat__back,
+  .header-chat__ellipsis {
+    display: none;
+  }
+
+  .header-chat__author {
+    @include span(5);
+    height: $header-height-desktop;
+  }
+
+  .header-chat__author p {
+    height: 100%;
+    line-height: $header-height-desktop;
+  }
+
+  .header-chat__menu {
+    @include span(6);
+    @include last;
+  }
+
+  .menu-chat__item {
+    float: right;
+    height: $header-height-desktop;
+    width: $header-height-desktop;
+    border-left: $light-border;
+    background: #fff;
+  }
+}
+
+

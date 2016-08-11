@@ -1,0 +1,14 @@
+a.header-chat__back.icon-center
+    i.fa.fa-arrow-left.fa-lg
+
+div.header-chat__author
+    p #{name}
+
+
+a.header-chat__ellipsis.icon-center
+    i.fa.fa-ellipsis-h
+
+ul.header-chat__menu.menu-chat
+    - each icon in icons
+        li.menu-chat__item.icon-center
+            i(class=icon.fa)

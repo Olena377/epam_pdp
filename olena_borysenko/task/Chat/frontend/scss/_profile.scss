@@ -1,0 +1,104 @@
+.profile {
+  @include span(12)
+}
+
+.profile__header-info {
+  height: $header-height-mobile;
+  border: $light-border;
+  box-sizing: border-box;
+}
+
+.header-info__notification {
+  position: relative;
+  @include span(2 of 12);
+  height: 100%;
+  width: $header-height-mobile;
+  font-size: $big;
+  line-height: $header-height-mobile;
+}
+
+.notification__icon {
+  position: relative;
+}
+
+.notification__icon:after {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: -5px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+}
+
+.header-info__user-name {
+  padding: 0 10px;
+  height: 100%;
+  @include last;
+  line-height: $header-height-mobile;
+  font-size: $medium;
+  font-weight: $thin;
+  color:  $opacity-gray;
+};
+
+.main-info {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.main-info__img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+.main-info__name {
+  font-size: $large;
+  font-weight: $light-bold;
+}
+
+.main-info__place {
+  font-size: $medium;
+  font-weight: $thin;
+}
+
+.item-info {
+  padding: 15px 0;
+  list-style: none;
+  border-bottom: $light-border;
+  font-size: $small;
+}
+
+.item-info__left {
+  font-weight: $bold;
+  text-align: left;
+}
+
+.item-info__right {
+  @include last;
+  font-weight: $thin;
+  text-align: right;
+}
+
+.item-info:last-child {
+  border: none;
+}
+
+.general-info {
+  padding: 0;
+  margin: 25px;
+}
+
+@include susy-breakpoint($middle, 12) {
+  .header-info__user-name {
+    line-height: $header-height-desktop;
+  };
+
+  .header-info__notification {
+    width: $header-height-desktop;
+  }
+
+  .profile__header-info {
+    height: $header-height-desktop;
+  }
+}

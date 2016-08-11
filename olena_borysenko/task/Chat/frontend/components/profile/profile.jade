@@ -1,0 +1,15 @@
+div.profile__header-info.header-info
+    div.header-info__notification.notification.icon-center
+        i.fa.fa-bell.notification__icon
+    div.header-info__user-name #{user_name}
+
+div.profile__main-info.main-info
+    img(src= './img/User.png').main-info__img
+    p.main-info__name #{kirstan.name}
+    p.main-info__place #{kirstan.place}
+
+ul.profile__general-info.general-info
+    each val in kirstan.general
+        li.general-info__item.item-info
+            span.item-info__left.clearfix #{val[0]}
+            span.item-info__right.clearfix #{val[1]}
