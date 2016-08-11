@@ -1,9 +1,12 @@
-@import "_config.scss";
-@import "_helpers.scss";
-@import "_utilities.scss";
-@import "_reset.scss";
-@import "../font-awesome/font-awesome.scss";
+@import "_config";
+@import "_helpers";
+@import "_utilities";
+@import "_reset";
+@import "../font-awesome/font-awesome";
 @import "_grids";
-@import "_base.scss";
+@import "_base";
 @import "../components/header/_header";
 @import "../components/user-profile/_user-profile";
+@import "../components/conversation/_conversation";
+@import "../components/sidebar/_sidebar";
+

@@ -2,7 +2,7 @@
 
 .header {
   @include span(12);
-  @extend %clearfix;
+  //@extend %clearfix;
   display: table;
   padding: 2.5rem 0;
   background: $color-primary;

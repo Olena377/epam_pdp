@@ -15,6 +15,7 @@
   .profile {
     display: block;
     @include span(3);
+    float: right;
     height: 100vh;
     background: $color-primary;
   }

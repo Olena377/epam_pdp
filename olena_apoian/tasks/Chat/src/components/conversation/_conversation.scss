@@ -1,0 +1,108 @@
+.conversation {
+  position: relative;
+  @include span(12);
+  //@extend %clearfix;
+}
+.conversation__messages {
+  padding: 2rem 1rem;
+  height: calc(100vh - 101px);
+  padding-bottom: 121px;
+  overflow-y: scroll;
+  background: $color-bg;
+}
+.conversation__message {
+  margin-bottom: 2rem;
+}
+.conversation__personal,
+.conversation__text {
+  display: inline-block;
+  vertical-align: middle;
+}
+.conversation__personal {
+  max-width: 10%;
+}
+.conversation__text {
+  position: relative;
+  max-width: 80%;
+  margin-top: -.5rem;
+  padding: 1rem;
+  font-size: $base__font-size;
+  font-weight: $font-weight--light;
+  text-align: left;
+  background: $color-primary;
+  border-radius: 5px;
+}
+.conversation__text:after {
+  content: '\f111';
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 30px;
+}
+.conversation__image {
+  width: 35px;
+  height: 35px;
+}
+.conversation__time {
+  display: block;
+  font-size: $little__font-size;
+}
+.conversation__message-right {
+  text-align: right;
+}
+.conversation__personal--margin-right {
+  margin-right: 1rem;
+}
+.conversation__personal--margin-left {
+  margin-left: 1rem;
+}
+.conversation__text--color {
+  background: $color-msg;
+  color: $color-primary;
+}
+
+/*** Conversation Footer ***/
+
+.conversation__footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: table;
+  width: 100%;
+  padding: 2rem 5%;
+  background: $color-footerbg;
+  color: $color-footer;
+}
+.conversation__icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+.conversation__input,
+.conversation__icon--clip,
+.conversation__wrapper {
+  display: table-cell;
+  //vertical-align: middle;
+}
+.conversation__input {
+  width: 100%;
+  padding: 1rem 0;
+  border: none;
+  font-size: $base__font-size;
+  font-weight: $font-weight--light;
+}
+.conversation__wrapper {
+  text-align: right;
+}
+.conversation__icon--smile {
+  margin-right: 1rem;
+  display: none;
+}
+@include susy-breakpoint($middle, 12) {
+  .conversation {
+    @include span(9);
+    height: calc(100vh - 85px);
+  }
+  .conversation__icon--smile {
+    display: inline-block;
+  }
+}

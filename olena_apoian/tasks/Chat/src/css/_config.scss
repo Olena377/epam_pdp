@@ -25,6 +25,9 @@ $light-grey     : rgba(0,0,0,0.1);
 $athens-gray    : #EBEEF3;
 $azure-radiance : #0084FF;
 $outer-space    : #293037;
+$ebony-clay     : #1d232a;
+$nevada         : #616d7a;
+$catskill-white : #fbfcfd;
 
 // Color Usage
 
@@ -33,12 +36,16 @@ $color-secondary : $outer-space;
 $color-border    : $light-grey;
 $color-bg        : $athens-gray;
 $color-msg       : $azure-radiance;
+$color-sidebar   : $ebony-clay;
+$color-footer    : $nevada;
+$color-footerbg  : $catskill-white;
 
 // Text
 
 $large__font-size: 20px;
 $base__font-size : 16px;
 $small__font-size : 14px;
+$little__font-size: 11px;
 $base__line      : 24px;
 $letter-space    : 1px;
 
