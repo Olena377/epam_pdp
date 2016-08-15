@@ -1,5 +1,6 @@
 .header__chat {
   height: $header-height-mobile;
+  border-bottom: $light-border;
 }
 
 .header-chat__author {
@@ -15,7 +16,6 @@
 }
 
 .header-chat__menu {
-  height: 50px;
   @include span(12);
   @include last;
 }
@@ -50,23 +50,26 @@
 
 .menu-chat__item {
   @include span(12);
-  background: #ccc;
   padding: 0;
   height: $header-height-mobile;
   font-size: 18px;
   list-style: none;
   border-bottom: $light-border;
   box-sizing: border-box;
+  cursor: pointer;
+}
+
+.menu-chat__item:hover {
+  background: #ccc;
 }
 
 .menu-chat__item:first-child {
-  border-top: $light-border
+  border-top: $light-border;
 }
 
 @include susy-breakpoint($middle, 12) {
   .header__chat {
     height: $header-height-desktop;
-    background: #fff;
   }
 
   .header-chat__back {
@@ -102,9 +105,15 @@
     float: right;
     height: $header-height-desktop;
     width: $header-height-desktop;
+    border: none;
     border-left: $light-border;
-    background: #fff;
   }
+
+  .menu-chat__item:first-child {
+    border-top: none;
+  }
+
+
 }
 
 

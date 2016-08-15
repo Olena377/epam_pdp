@@ -58,6 +58,7 @@ body {
 }
 
 .wrapper__chat {
+  position: relative;
   @include span(12);
   height: 100%;
   background: #fff;

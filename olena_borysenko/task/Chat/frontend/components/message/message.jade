@@ -1,0 +1,12 @@
+each val in message
+    li.messages__item.item-message.clearfix
+        if val.author=='user'
+            div.item-message__person.item-message__person--right
+                img(src= val.photo).item-message__photo
+                span.item-message__time #{val.time}
+            div.item-message__text.item-message__text--right #{val.message}
+        else
+            div.item-message__person
+                img(src= val.photo).item-message__photo
+                span.item-message__time #{val.time}
+            div.item-message__text #{val.message}
