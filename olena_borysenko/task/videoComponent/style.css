@@ -1,0 +1,76 @@
+.vjs-big-play-centered .vjs-big-play-button {
+width: 60px;
+height: 60px;
+border-radius: 50%;
+background: #fff;
+opacity: 0.35;
+}
+
+.vjs-big-play-centered .vjs-big-play-button:hover {
+background: red;
+}
+
+.video-js .vjs-big-play-button:before {
+top: 6px;
+}
+
+.video-js .vjs-control:before {
+    color: #444;
+}
+
+.video-js .vjs-control-bar {
+    background: #fff;
+    font-size: 20px;
+}
+
+.video-js .vjs-current-time, .vjs-no-flex .vjs-current-time,
+.vjs-time-divider,
+.video-js .vjs-duration {
+    display: block;
+    color: #444;
+}
+
+.video-js .vjs-play-progress{
+    background-color: #00f;
+}
+
+.video-js .vjs-play-progress:before {
+    color: #00f;
+    top: -8px;
+}
+
+.vjs-volume-menu-button {
+    display: none;
+}
+
+.vjs-control-bar {
+    padding: 10px 0;
+}
+
+.video-js .vjs-progress-control {
+    padding-top: 25px;
+}
+
+.video-js .vjs-time-control {
+    min-width: 0;
+    padding: 0 3px;
+}
+
+.video-js .vjs-progress-holder .vjs-load-progress,
+.video-js .vjs-progress-holder,
+.vjs-play-progress.vjs-slider-bar,
+.video-js .vjs-progress-holder .vjs-play-progress {
+    height: 0.1em;
+}
+
+.vjs-load-progress {
+    background: #ccc;
+}
+
+.vjs-play-progress.vjs-slider-bar {
+    background-color: #00f;
+}
+
+.video-js .vjs-progress-control:hover ~ .video-js .vjs-play-progress:before {
+    top: -14px;
+}
