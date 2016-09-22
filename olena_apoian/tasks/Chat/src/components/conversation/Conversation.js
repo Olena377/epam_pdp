@@ -9,7 +9,7 @@ class Conversation extends React.Component {
                 <div className="conversation__messages">
                     {this.props.messages1.map(function(message){
                             return (
-                                <div className="conversation__message">
+                                <div className="conversation__message" key={message.id}>
                                     <div className="conversation__personal conversation__personal--margin-right">
                                         <img className="conversation__image" src={message.image} alt="User Photo" />
                                         <time className="conversation__time">{message.time}</time>
@@ -21,16 +21,16 @@ class Conversation extends React.Component {
                             )
                         })
                     }
-                    {this.props.messages2.map(function(message){
+                    {this.props.messages2.map(function(message, i){
                         return (
-                                <div className="conversation__message conversation__message-right">
+                                <div className="conversation__message conversation__message-right" key={message.id}>
                                     <div className="conversation__text  conversation__text--right">
-                                    <p>{message.text}</p>
-                                </div>
-                                <div className="conversation__personal conversation__personal--margin-left">
-                                    <img className="conversation__image" src={message.image} alt="User Photo" />
-                                    <time className="conversation__time">{message.time}</time>
-                                </div>
+                                        <p>{message.text}</p>
+                                    </div>
+                                    <div className="conversation__personal conversation__personal--margin-left">
+                                        <img className="conversation__image" src={message.image} alt="User Photo" />
+                                        <time className="conversation__time">{message.time}</time>
+                                    </div>
                                 </div>
                             )
                         })

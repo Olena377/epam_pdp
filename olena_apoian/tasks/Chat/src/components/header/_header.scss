@@ -2,7 +2,7 @@
 
 .header {
   @include span(12);
-  //@extend %clearfix;
+  position: relative;
   display: table;
   padding: 2.5rem 0;
   background: $color-primary;
@@ -38,9 +38,10 @@
 .header__item {
   display: inline-block;
   border-left: $border--light;
+  background: $color-primary;
 }
 .header__anchor {
-  padding: 1em;
+  padding: 1em 46%;
   color: $color-secondary;
   opacity: $half-opacity;
 }
@@ -48,9 +49,24 @@
 .header__anchor:active {
   color: $color-msg;
 }
-.header__nav,
+.header__nav {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 100px;
+  right: 0;
+  background: $color-primary;
+}
+.header__item {
+  display: block;
+  text-align: center;
+  border-top: 1px solid $color-border;
+}
 .header__message,
 .another-name {
+  display: none;
+}
+.display-none {
   display: none;
 }
 
@@ -69,13 +85,22 @@
     display: inline-block;
   }
   .header__nav {
-    //@include span(15 last);
+    position: static;
     @include span(6 of 12 last);
     width: initial;
     display: block;
+    background: $color-bg;
+  }
+  .header__item {
+    display: inline-block;
+    text-align: center;
+    border-top: none;
+    background: $color-bg;
+  }
+  .header__anchor {
+    padding: 1em;
   }
   .header__name {
-    //@include span(9 first);
     @include span(6 of 12 first);
     display: table-cell;
     float: none;
