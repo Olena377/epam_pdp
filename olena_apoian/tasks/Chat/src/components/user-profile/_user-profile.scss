@@ -40,11 +40,22 @@
     }
     &__name {
       @include span(4 last);
+      position: relative;
       float: none;
       display: table-cell;
-      padding-right: 1.5rem;
+      padding-right: 3.5rem;
       font-weight: $font-weight--light;
       text-align: right;
+    }
+    &__name:after {
+      position: absolute;
+      top: 30px;
+      right: 15px;
+      padding: 10px;
+      content: '\f0d7';
+      font: normal normal normal 14px/1 FontAwesome;
+      color: $color-msg;
+      cursor: pointer;
     }
   }
   .profile-details {
