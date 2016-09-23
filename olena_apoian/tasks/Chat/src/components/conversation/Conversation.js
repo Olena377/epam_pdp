@@ -3,6 +3,15 @@ import ReactDOM from 'react-dom';
 
 
 class Conversation extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            text: ''
+        }
+    }
+    handleTextChange(event) {
+        this.setState({ text: event.target.value });
+    };
     render(){
         return (
             <div className="conversation">
@@ -38,10 +47,13 @@ class Conversation extends React.Component {
                 </div>
                 <div className="conversation__footer">
                     <a className="fa fa-paperclip fa-2x conversation__icon conversation__icon--clip" aria-hidden="true"></a>
-                    <textarea className="conversation__input" placeholder="Type your message..."></textarea>
+                    <textarea className="conversation__input" placeholder="Type your message..." value={this.state.text} onChange={this.handleTextChange.bind(this)}></textarea>
                     <div className="conversation__wrapper">
                         <a className="fa fa-smile-o fa-2x conversation__icon conversation__icon--smile" aria-hidden="true"></a>
-                        <a className="fa fa-chevron-circle-right fa-3x conversation__icon" aria-hidden="true"></a>
+                        <button className="fa fa-chevron-circle-right fa-3x conversation__icon conversation__icon--submit"
+                                aria-hidden="true"
+                                disabled={!this.state.text}>
+                        </button>
                     </div>
                 </div>
             </div>
