@@ -93,6 +93,9 @@
   display: table-cell;
   vertical-align: top;
 }
+.conversation__icon--clip div {
+  display: none !important;
+}
 .conversation__input {
   width: 100%;
   padding: 0;

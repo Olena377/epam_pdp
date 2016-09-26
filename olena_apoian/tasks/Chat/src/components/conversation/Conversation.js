@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import FileInput from 'react-file-input';
 
 class Conversation extends React.Component {
     constructor() {
@@ -11,6 +11,9 @@ class Conversation extends React.Component {
     }
     handleTextChange(event) {
         this.setState({ text: event.target.value });
+    };
+    handleChange(event) {
+        console.log('Selected file:', event.target.files[0]);
     };
     render(){
         return (
@@ -46,7 +49,12 @@ class Conversation extends React.Component {
                     }
                 </div>
                 <div className="conversation__footer">
-                    <a className="fa fa-paperclip fa-2x conversation__icon conversation__icon--clip" aria-hidden="true"></a>
+                    <label className="fa fa-paperclip fa-2x conversation__icon conversation__icon--clip">
+                        <FileInput
+                            id="myImage"
+                            accept=".png,.gif,.txt"
+                            onChange={this.handleChange.bind(this)}/>
+                    </label>
                     <textarea className="conversation__input" placeholder="Type your message..." value={this.state.text} onChange={this.handleTextChange.bind(this)}></textarea>
                     <div className="conversation__wrapper">
                         <a className="fa fa-smile-o fa-2x conversation__icon conversation__icon--smile" aria-hidden="true"></a>
