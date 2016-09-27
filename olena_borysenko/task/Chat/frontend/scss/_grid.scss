@@ -55,13 +55,14 @@ body {
 
 .wrapper__profile {
   display: none;
+  background: $light-background;
 }
 
 .wrapper__chat {
   position: relative;
   @include span(12);
   height: 100%;
-  background: #fff;
+  background: $light-background;
 }
 
 @include susy-breakpoint($middle, 12) {
@@ -76,7 +77,7 @@ body {
   }
 
   .wrapper__chat {
-    @include span(6);
+    @include span(9);
     height: 100%;
   }
 

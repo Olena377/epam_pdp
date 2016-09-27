@@ -1,0 +1,79 @@
+.chat__message {
+  margin: 15px 20px;
+  padding: 0;
+}
+
+.chat {
+  background: #eff0f3;
+}
+
+.item-message {
+  margin-bottom: 10px;
+  list-style: none;
+  overflow: hidden;
+}
+
+.item-message__person,
+.item-mesage__my {
+  @include span(1.5 of 12)
+}
+
+.item-message__text {
+  max-width: 70%;
+  float: left;
+  position: relative;
+  padding: 18px 23px;
+  background: #fff;
+  border-radius: 4px;
+  line-height: 22px;
+}
+
+.item-message__person--right {
+  @include last;
+}
+
+.item-message__text--right {
+  @include last;
+  @include push(2);
+  background: $blue-background;
+  color: #fff;
+}
+
+.item-message__text:before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 7px;
+  border: 5px solid transparent;
+  border-right: 7px solid #fff;
+}
+
+.item-message__text--right:before {
+  display: none;
+}
+
+.item-message__text--right:after {
+  content: '';
+  position: absolute;
+  right: -12px;
+  top: 7px;
+  border: 5px solid transparent;
+  border-left: 7px solid #0084ff;
+}
+
+
+.item-message__photo {
+  display: block;
+  margin: auto;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+}
+
+.item-message__time {
+  display: block;
+  font-size: 11px;/* Приближение из-за подстановки шрифтов */
+  font-weight: 500;
+  text-align: center;
+  line-height: 36px;
+}

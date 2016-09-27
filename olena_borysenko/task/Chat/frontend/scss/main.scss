@@ -1,8 +1,10 @@
 @import "_reset";
 @import "_general";
+@import "_variable";
+@import "_font";
 @import "_config";
 @import "_grid";
-@import "_header";
-@import "_profile";
-@import "_message";
-@import "_footer";
+@import "../components/header/_header";
+@import "../components/profile/_profile";
+@import "../components/message/_message";
+@import "../components/footer/_footer";

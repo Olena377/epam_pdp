@@ -2,13 +2,19 @@ a.header-chat__back.icon-center
     i.fa.fa-arrow-left.fa-lg
 
 div.header-chat__author
-    p #{name}
+    p.header-chat__friend #{name}
+       span.header-chat__isTyping  is typing...
 
 
-a.header-chat__ellipsis.icon-center
+a.header-chat__ellipsis.icon-center(data-menu-btn='false')
     i.fa.fa-ellipsis-h
 
-ul.header-chat__menu.menu-chat
+ul.header-chat__menu.menu-chat(data-menu)
     - each icon in icons
         li.menu-chat__item.icon-center
             i(class=icon.fa)
+
+div.profile__header-info.header-info
+    div.header-info__notification.notification.icon-center
+        i.fa.fa-bell.notification__icon
+    div.header-info__user-name Matt Daimon

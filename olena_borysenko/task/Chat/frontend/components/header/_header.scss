@@ -1,0 +1,149 @@
+.wrapper__header {
+  background: $grey-background;
+}
+
+.header__chat {
+  position: relative;
+  height: $header-height-mobile;
+  border-bottom: $light-border;
+}
+
+.header-chat__author {
+  @include span(8);
+  height: $header-height-mobile;
+}
+
+.header-chat__author p {
+  height: 100%;
+  margin: 0;
+  padding: 0 20px;
+  line-height: $header-height-mobile;
+  font-weight: 700;
+  color: rgba(41, 48, 55, 0.8);
+}
+
+.header-chat__isTyping {
+  font-weight: 300;
+}
+
+.header-chat__menu {
+  @include span(12);
+  @include last;
+}
+
+.icon-center {
+  font-size: $medium;
+  text-align: center;
+  color: $grey;
+}
+
+.icon-center i {
+  line-height: $header-height-mobile;
+}
+
+.profile__header-info {
+  display: none;
+}
+
+.header-chat__back,
+.header-chat__ellipsis {
+  @include span(2);
+  &:hover {
+    background: #ccc;
+    cursor: pointer;
+  }
+}
+
+.header-chat__ellipsis {
+  @include last;
+}
+
+.menu-chat {
+  display: none;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 60px;
+  z-index: 6;
+  background: $grey-background;
+}
+
+.menu-chat__item {
+  @include span(12);
+  padding: 0;
+  height: $header-height-mobile;
+  font-size: $big;
+  list-style: none;
+  border-bottom: $light-border;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.menu-chat__item:hover {
+  background: #ccc;
+}
+
+.menu-chat__item:first-child {
+  border-top: $light-border;
+}
+
+@include susy-breakpoint($middle, 12) {
+  .header__chat {
+    height: $header-height-desktop;
+  }
+
+  .header-chat__back {
+    text-align: center;
+    padding: ($header-height-desktop - $medium) 0;
+  }
+
+  .icon-center i {
+    line-height: $header-height-desktop;
+  }
+
+  .header-chat__back,
+  .header-chat__ellipsis {
+    display: none;
+  }
+
+  .header-chat__author {
+    @include span(5);
+    height: $header-height-desktop;
+  }
+
+  .header-chat__author p {
+    height: 100%;
+    line-height: $header-height-desktop;
+  }
+
+  .header-chat__menu {
+    @include span(4);
+  }
+
+  .profile__header-info {
+    @include span(3);
+    display: inline-block;
+    background: $light-background;
+  }
+
+  .menu-chat {
+    display: inline-block;
+    top: 0;
+  }
+
+  .menu-chat__item {
+    float: right;
+    height: $header-height-desktop;
+    width: $header-height-desktop;
+    border: none;
+    border-left: $light-border;
+  }
+
+  .menu-chat__item:first-child {
+    border-top: none;
+  }
+
+
+}
+
+
