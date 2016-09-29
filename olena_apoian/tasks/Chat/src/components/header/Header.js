@@ -1,40 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Menu from '../menu/Menu'
 
 class Header extends React.Component {
     constructor() {
         super();
-        this.state = {
-            isOpened: false
-        }
     }
-    showList() {
-        this.setState({
-            isOpened: !this.state.isOpened
-        });
+    showMenu() {
+        this.refs.menu.show();
     };
     render(){
         return (
             <header className="header">
                 <a href="#" className="fa fa-arrow-left fa-lg header__icon--left"></a>
                 <h2 className="header__name">{this.props.friend.name}<span className="header__message">&nbsp; is typing...</span></h2>
-                <a href="#" className="fa fa-ellipsis-h fa-lg header__icon--right" onClick={this.showList.bind(this)}></a>
-                <ul className={this.state.isOpened ? "header__nav " : "header__nav display-none"} >
-                    <li className="header__item">
-                        <a href="#" className="fa fa-star fa-2x header__anchor" aria-hidden="true"></a>
-                    </li>
-                    <li className="header__item">
-                        <a href="#" className="fa fa-phone fa-2x header__anchor" aria-hidden="true"></a>
-                    </li>
-                    <li className="header__item">
-                        <a href="#" className="fa fa-video-camera fa-2x header__anchor" aria-hidden="true"></a>
-                    </li>
-                </ul>
+                <a href="#" className="fa fa-ellipsis-h fa-lg header__icon--right" onClick={this.showMenu.bind(this)}></a>
+                <Menu ref="menu"></Menu>
             </header>
 
         )
     }
 };
+
+
 Header.propTypes = {
     name: React.PropTypes.string,
 };

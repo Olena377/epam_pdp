@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import FileInput from 'react-file-input';
+import EmojiPicker from 'emojione-picker';
 
 class Conversation extends React.Component {
     constructor() {
         super();
         this.state = {
-            text: ''
+            text: '',
+            isOpened: false
         }
     }
     handleTextChange(event) {
@@ -14,6 +16,11 @@ class Conversation extends React.Component {
     };
     handleChange(event) {
         console.log('Selected file:', event.target.files[0]);
+    };
+    showEmoji() {
+        this.setState({
+            isOpened: !this.state.isOpened
+        });
     };
     render(){
         return (
@@ -57,7 +64,12 @@ class Conversation extends React.Component {
                     </label>
                     <textarea className="conversation__input" placeholder="Type your message..." value={this.state.text} onChange={this.handleTextChange.bind(this)}></textarea>
                     <div className="conversation__wrapper">
-                        <a className="fa fa-smile-o fa-2x conversation__icon conversation__icon--smile" aria-hidden="true"></a>
+                        <a className={this.state.isOpened ? "fa fa-smile-o fa-2x conversation__icon conversation__icon--smile" : "fa fa-smile-o fa-2x conversation__icon conversation__icon--smile conversation__icon--opened"}
+                                    aria-hidden="true"
+                                    onClick={this.showEmoji.bind(this)}/>
+                        <EmojiPicker className={this.state.isOpened ? " " : "display-none"} onChange={function(data){
+                          console.log("Emoji chosen", data);
+                        }} />
                         <button className="fa fa-chevron-circle-right fa-3x conversation__icon conversation__icon--submit"
                                 aria-hidden="true"
                                 disabled={!this.state.text}>

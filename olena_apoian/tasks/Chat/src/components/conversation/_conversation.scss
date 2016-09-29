@@ -96,6 +96,9 @@
 .conversation__icon--clip div {
   display: none !important;
 }
+.conversation__icon--smile > input {
+  display: none !important;
+}
 .conversation__input {
   width: 100%;
   padding: 0;
@@ -114,6 +117,8 @@
 }
 .conversation__icon--smile {
   margin-right: 1rem;
+}
+.conversation__icon--opened + div {
   display: none;
 }
 .conversation__icon--submit {
@@ -136,6 +141,19 @@
   color: $color-footer;
   cursor: initial;
   opacity: 0.7;
+}
+.emoji-dialog {
+  position: absolute !important;
+  top: -16em;
+  right: 0;
+  width: 50vw !important;
+  max-width: 500px;
+  min-width: 362px;
+}
+.emoji-dialog .emoji-category-header {
+  text-align: left !important;
+  margin-left: 4% !important;
+  margin-top: 10px !important;
 }
 @include susy-breakpoint($middle, 12) {
   .conversation {
