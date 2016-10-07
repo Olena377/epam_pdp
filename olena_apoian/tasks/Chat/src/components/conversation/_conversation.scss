@@ -32,12 +32,22 @@
   background: $color-primary;
   border-radius: 5px;
 }
-.conversation__text:after {
-  content: '\f111';
+.conversation__text:after,
+.conversation__text--color:after {
+  font: normal normal normal 14px/1 FontAwesome;
   position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 30px;
+  top: 15px;
+  font-size: 20px;
+}
+.conversation__text--left:after {
+  content: '\f0d9';
+  left: -7px;
+  color: $color-primary;
+}
+.conversation__text--right:after {
+  content: '\f0da';
+  right: -7px;
+  color: $color-msg ;
 }
 .conversation__image {
   width: 35px;
@@ -56,7 +66,7 @@
 .conversation__personal--margin-left {
   margin-left: 1rem;
 }
-.conversation__text--color {
+.conversation__text--right {
   background: $color-msg;
   color: $color-primary;
 }
@@ -69,7 +79,7 @@
   left: 0;
   display: table;
   width: 100%;
-  padding: 2rem 5%;
+  padding: 2rem 2% 1rem;
   background: $color-footerbg;
   color: $color-footer;
 }
@@ -81,21 +91,69 @@
 .conversation__icon--clip,
 .conversation__wrapper {
   display: table-cell;
-  //vertical-align: middle;
+  vertical-align: top;
+}
+.conversation__icon--clip div {
+  display: none !important;
+}
+.conversation__icon--smile > input {
+  display: none !important;
 }
 .conversation__input {
   width: 100%;
-  padding: 1rem 0;
+  padding: 0;
   border: none;
   font-size: $base__font-size;
   font-weight: $font-weight--light;
+  resize: none;
 }
+.conversation__input::-webkit-input-placeholder {color:$color-footer;}
+.conversation__input::-moz-placeholder          {color:$color-footer}/* Firefox 19+ */
+.conversation__input:-moz-placeholder           {color:$color-footer}/* Firefox 18- */
+.conversation__input:-ms-input-placeholder      {color:$color-footer}
+
 .conversation__wrapper {
   text-align: right;
 }
 .conversation__icon--smile {
   margin-right: 1rem;
+}
+.conversation__icon--opened + div {
   display: none;
+}
+.conversation__icon--submit {
+  border: none;
+  background: none;
+}
+.conversation__icon:hover,
+.conversation__icon--clip:hover,
+.conversation__icon--smile:hover,
+.conversation__icon:active,
+.conversation__icon--clip:active,
+.conversation__icon--smile:active{
+  color: $color-msg;
+  cursor: pointer;
+}
+.conversation__icon:disabled:link,
+.conversation__icon:disabled:visited,
+.conversation__icon:disabled:hover,
+.conversation__icon:disabled:active{
+  color: $color-footer;
+  cursor: initial;
+  opacity: 0.7;
+}
+.emoji-dialog {
+  position: absolute !important;
+  top: -16em;
+  right: 0;
+  width: 50vw !important;
+  max-width: 500px;
+  min-width: 362px;
+}
+.emoji-dialog .emoji-category-header {
+  text-align: left !important;
+  margin-left: 4% !important;
+  margin-top: 10px !important;
 }
 @include susy-breakpoint($middle, 12) {
   .conversation {

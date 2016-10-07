@@ -3,6 +3,11 @@
   box-sizing: border-box;
 }
 body {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
   position: relative;
   font-size: $small__font-size;
   line-height: ($base__line/$base__font-size);
