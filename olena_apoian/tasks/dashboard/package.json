@@ -1,0 +1,16 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node_modules/.bin/http-server"
+  },
+  "author": "Olena Apoian",
+  "license": "ISC",
+  "dependencies": {
+    "bourbon-neat": "^1.8.0",
+    "http-server": "^0.9.0"
+  }
+}
