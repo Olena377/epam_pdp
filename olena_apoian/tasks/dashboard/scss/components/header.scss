@@ -1,0 +1,131 @@
+.header {
+  display: table;
+  height: 134px;
+  font-size: 1.2em;
+  background: $color-header;
+  color: $color-text;
+}
+
+.header__logo {
+  display: table-cell;
+  width: 90px;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+  background: $color-logo;
+}
+
+.header__logo-link {
+  display: block;
+  padding: 30px 0;
+}
+
+.top-navbar {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.container {
+  position: relative;
+  float: left;
+  width: calc(100% - 390px);
+  padding: 50px 3.5em;
+}
+
+.top-navbar__list,
+.search {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.top-navbar__list-item {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px;
+
+  > a {
+    display: block;
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.top-navbar__list-item:hover,
+.top-navbar__list-item:active {
+  color: $color-base;
+}
+
+.top-navbar__account {
+  text-align: center;
+  float: right;
+  width: 390px;
+  height: 134px;
+  padding: 30px 0;
+  background: $color-logo;
+}
+
+.top-navbar__user-name {
+  &:after {
+    font-family: FontAwesome;
+    content: '\f0d7';
+    margin-left: 10px;
+    cursor: pointer;
+  }
+}
+
+.avatar-box,
+.avatar-box__user-image {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.avatar-box {
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0 11px;
+  border-radius: 50%;
+}
+
+.avatar-box__user-image {
+  position: relative;
+  display: block;
+  border-radius: 50%;
+}
+
+.search {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+}
+
+.search__input {
+  width: 300px;
+  height: 50px;
+  background: $color-search;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #fff;
+  padding-left: 35px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.search__icon {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  z-index: 1;
+  color: $color-text;
+  cursor: pointer;
+}
+
+.search__icon:hover,
+.search__icon:active {
+  color: $color-base;
+}
+

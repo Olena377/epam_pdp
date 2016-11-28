@@ -1,0 +1,182 @@
+.content {
+  color: $color-text;
+}
+
+.content__header {
+  padding: 2.5em 3.5em;
+  background: $color-base;
+}
+
+.content__title {
+  font-size: 2.25em;
+  font-weight: inherit;
+
+  &:after {
+    font-family: FontAwesome;
+    font-size: .7em;
+    content: '\f013';
+    margin-left: 10px;
+    color: $color-primary;
+    cursor: pointer;
+  }
+}
+
+.content__main {
+  padding: 1.5em 3.5em;
+  background: $color-secondary;
+}
+
+.statistic {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.statistic__item {
+  width: 100%;
+  border-left: 6px solid $color-sidebar;
+}
+
+.statistic__block {
+  padding-left: 10%;
+}
+
+.statistic__title {
+  font-size: 2.375em;
+  font-weight: inherit;
+  color: $color-main-text;
+}
+
+.statistic__text {
+  font-size: 1em;
+  color: $color-primary;
+}
+
+.charts {
+  margin: 5em 0;
+}
+
+.d3js-1,
+.d3js-2,
+.d3js-3,
+.d3js-4,
+.highcharts-1,
+.highcharts-2,
+.highcharts-3,
+.highcharts-4 {
+  display: inline-block;
+  width: 100%;
+  margin-top: 50px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  @media screen and (min-width: 960px) {
+    width: 45%;
+  }
+}
+
+.axis path, .axis line
+{
+  fill: none;
+  stroke: #777;
+  shape-rendering: crispEdges;
+}
+
+.tick
+{
+  stroke-dasharray: 1, 2;
+}
+.bar
+{
+  fill: FireBrick;
+}
+
+.node {
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.link {
+  stroke: #999;
+  stroke-opacity: 0.3;
+}
+
+.bars rect {
+  fill: steelblue;
+}
+
+.axis text {
+  font: 8px sans-serif;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+#graph {
+  padding: 20px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+#graph #info #keys .key {
+  padding: 10px;
+  display: inline-block;
+}
+
+#info {
+  color: #555;
+}
+
+#info #keys .key-text {
+  vertical-align: super;
+}
+
+#graph .bars line {
+  stroke: #95cddf;
+  stroke-width: 2px;
+}
+
+#graph .tick line {
+  stroke: #ccc;
+  stroke-width: 1px;
+}
+
+#graph .axis path {
+  stroke-width: 1px;
+  stroke: #ccc;
+  fill: none;
+}
+
+#graph path#rain-line {
+  fill: none;
+  stroke: #cc627a;
+  stroke-width: 0.5;
+}
+
+#graph line#cursor {
+  stroke-width: 1.5px;
+  stroke: #555;
+  fill: none;
+  opacity: 0.7;
+}
+
+#graph text {
+  fill: #aaa;
+}
+
+#graph text.label {
+  font-weight: bold;
+  color: #555;
+}
+
+.current-date {
+  font-size: .625em;
+}

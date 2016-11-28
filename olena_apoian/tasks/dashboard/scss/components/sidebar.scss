@@ -1,0 +1,53 @@
+.sidebar {
+  width: 90px;
+  height: calc(100vh - 134px);
+  background: $color-sidebar;
+}
+
+.sidebar__list-item {
+  margin: 3em 0;
+}
+
+.sidebar__icon {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  background: url("../img/icons.png");
+}
+
+.sidebar__icon--dashboard {
+  background-position: -5px -3px;
+}
+
+.sidebar__icon--profile {
+  background-position: -56px -3px;
+}
+
+.sidebar__icon--pen {
+  background-position: -111px -3px;
+}
+
+.sidebar__icon--calander {
+  background-position: -170px -3px;
+}
+
+.sidebar__icon--notes {
+  background-position: 175px -7px;
+}
+
+.sidebar__icon--comments {
+  background-position: 120px -7px;
+  width: 60px;
+  height: 52px;
+}
+
+.sidebar__icon--graph {
+  background-position: 55px -7px;
+}
+
+.sidebar__icon:hover,
+.sidebar__icon:active {
+  background-position-y: 58px;
+}
+
