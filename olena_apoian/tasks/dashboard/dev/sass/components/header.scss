@@ -67,12 +67,12 @@
   background: $color-logo;
 }
 
-.top-navbar__user-name {
-  &:after {
-    font-family: FontAwesome;
-    content: '\f0d7';
-    margin-left: 10px;
-    cursor: pointer;
+.top-navbar__details {
+  margin-left: 10px;
+
+  &:hover,
+  &:active {
+    color: $color-base;
   }
 }
 

@@ -11,8 +11,8 @@
     var container = d3.select('#graph')
         .append('svg')
         .attr('id', 'container')
-        .attr('width', width + padding * 2)
-        .attr('height', height + padding * 2);
+        .attr('width', width)
+        .attr('height', height);
 
     var info = d3.select('#graph')
         .select('#info')

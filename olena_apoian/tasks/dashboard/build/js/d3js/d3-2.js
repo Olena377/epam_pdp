@@ -93,7 +93,7 @@
         return chart;
     }
 
-    d3.select(".d3js-3")
+    d3.select(".d3-3")
         .datum(irwinHallDistribution(10000, 10))
         .call(histogramChart()
             .bins(d3.scale.linear().ticks(20))

@@ -8,7 +8,7 @@
     var width = 480,
         height = 250;
 
-    var svg = d3.select('.d3js-1')
+    var svg = d3.select('.d3-1')
         .append('svg')
         .attr('width', width)
         .attr('height', height);

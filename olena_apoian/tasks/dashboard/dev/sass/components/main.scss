@@ -3,7 +3,7 @@
 }
 
 .content__header {
-  padding: 2.5em 3.5em;
+  padding: 1em 3.5em;
   background: $color-base;
 }
 
@@ -34,48 +34,39 @@
 
 .statistic__item {
   width: 100%;
-  border-left: 6px solid $color-sidebar;
-}
-
-.statistic__block {
-  padding-left: 10%;
+  border-left: 4px solid $color-sidebar;
 }
 
 .statistic__title {
-  font-size: 2.375em;
+  padding-left: 10%;
+  font-size: 2em;
   font-weight: inherit;
   color: $color-main-text;
 }
 
 .statistic__text {
+  padding-left: 10%;
   font-size: 1em;
   color: $color-primary;
 }
 
-.charts {
-  margin: 5em 0;
+.charts,
+.highcharts {
+  @include row();
+  @include span-columns(12);
 }
 
-.d3js-1,
-.d3js-2,
-.d3js-3,
-.d3js-4,
-.highcharts-1,
-.highcharts-2,
-.highcharts-3,
-.highcharts-4 {
-  display: inline-block;
-  width: 100%;
-  margin-top: 50px;
-
-  &:first-child {
-    margin-top: 0;
-  }
-
-  @media screen and (min-width: 960px) {
-    width: 45%;
-  }
+.d3-1,
+.d3-2,
+.d3-3,
+.d3-4,
+.highchart-1,
+.highchart-2,
+.highchart-3,
+.highchart-4 {
+  @include span-columns(3);
 }
+
 
 .axis path, .axis line
 {
@@ -120,23 +111,8 @@
 }
 
 #graph {
-  padding: 20px;
   font-size: 10px;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-#graph #info #keys .key {
-  padding: 10px;
-  display: inline-block;
-}
-
-#info {
-  color: #555;
-}
-
-#info #keys .key-text {
-  vertical-align: super;
 }
 
 #graph .bars line {

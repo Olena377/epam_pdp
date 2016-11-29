@@ -1,0 +1,12 @@
+.sidebar__list-item {
+  margin: 3em 0;
+}
+
+.sidebar__icon {
+  color: $color-sidebar-icon;
+}
+
+.sidebar__icon:hover,
+.sidebar__icon:active {
+  color: $color-sidebar-icon-active;
+}

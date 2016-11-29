@@ -6,7 +6,7 @@
     <title>Dashboard</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <div class="wrapper">
@@ -30,7 +30,7 @@
                     </li>
                 </ul>
                 <div class="search">
-                    <input class="search__input" type="search"/>
+                    <input class="search__input" type="submit" value=""/>
                     <a class="search__icon"><i class="fa fa-search"></i></a>
                 </div>
             </div>
@@ -38,7 +38,8 @@
                 <div class="avatar-box">
                     <img class="avatar-box__user-image" src="img/user.png" alt="Aaron's image" />
                 </div>
-                <span class="top-navbar__user-name">Aaron Sananes</span>
+                <span>Aaron Sananes</span>
+                <a href="#" class="fa fa-caret-down top-navbar__details"></a>
             </div>
         </nav>
     </header>
@@ -46,25 +47,34 @@
         <nav class="sidebar__nav">
             <ul class="sidebar__list">
                 <li class="sidebar__list-item">
-                    <a href="#" class="sidebar__icon sidebar__icon--dashboard"></a>
+                    <a href="#">
+                        <i class="fa fa-3x fa-tachometer sidebar__icon" aria-hidden="true"></i>
+                    </a>
                 </li>
                 <li class="sidebar__list-item">
-                    <a href="#" class="sidebar__icon sidebar__icon--profile"></a>
+                    <a href="#">
+                        <i class="fa fa-3x fa-comments-o sidebar__icon" aria-hidden="true"></i>
+                    </a>
                 </li>
                 <li class="sidebar__list-item">
-                    <a href="#" class="sidebar__icon sidebar__icon--pen"></a>
+                    <a href="#">
+                        <i class="fa fa-3x fa-line-chart sidebar__icon" aria-hidden="true"></i>
+                    </a>
                 </li>
                 <li class="sidebar__list-item">
-                    <a href="#" class="sidebar__icon sidebar__icon--calander"></a>
+                    <a href="#">
+                        <i class="fa fa-3x fa-pencil sidebar__icon" aria-hidden="true"></i>
+                    </a>
                 </li>
                 <li class="sidebar__list-item">
-                    <a href="#" class="sidebar__icon sidebar__icon--notes"></a>
+                    <a href="#">
+                        <i class="fa fa-3x fa-sticky-note-o sidebar__icon" aria-hidden="true"></i>
+                    </a>
                 </li>
                 <li class="sidebar__list-item">
-                    <a href="#" class="sidebar__icon sidebar__icon--comments"></a>
-                </li>
-                <li class="sidebar__list-item">
-                    <a href="#" class="sidebar__icon sidebar__icon--graph"></a>
+                    <a href="#">
+                        <i class="fa fa-3x fa-calendar sidebar__icon" aria-hidden="true"></i>
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -76,78 +86,53 @@
         <main class="content__main">
             <ul class="statistic">
                 <li class="statistic__item">
-                    <div class="statistic__block">
-                        <h3 class="statistic__title">267</h3>
-                        <span class="statistic__text">Online Players</span>
-                    </div>
+                    <h3 class="statistic__title">267</h3>
+                    <span class="statistic__text">Online Players</span>
                 </li>
                 <li class="statistic__item">
-                    <div class="statistic__block">
-                        <h3 class="statistic__title">1890</h3>
-                        <span class="statistic__text">Hours Played</span>
-                    </div>
+                    <h3 class="statistic__title">1890</h3>
+                    <span class="statistic__text">Hours Played</span>
                 </li>
                 <li class="statistic__item">
-                    <div class="statistic__block">
-                        <h3 class="statistic__title">22</h3>
-                        <span class="statistic__text">New Tournament</span>
-                    </div>
+                    <h3 class="statistic__title">22</h3>
+                    <span class="statistic__text">New Tournament</span>
                 </li>
                 <li class="statistic__item">
-                    <div class="statistic__block">
-                        <h3 class="statistic__title">16</h3>
-                        <span class="statistic__text">Lifetime Falls</span>
-                    </div>
+                    <h3 class="statistic__title">16</h3>
+                    <span class="statistic__text">Lifetime Falls</span>
                 </li>
                 <li class="statistic__item">
-                    <div class="statistic__block">
-                        <h3 class="statistic__title">6544</h3>
-                        <span class="statistic__text">Comments</span>
-                    </div>
+                    <h3 class="statistic__title">6544</h3>
+                    <span class="statistic__text">Comments</span>
                 </li>
                 <li class="statistic__item">
-                    <div class="statistic__block">
-                        <h3 class="statistic__title">658</h3>
-                        <span class="statistic__text">Games Played</span>
-                    </div>
+                    <h3 class="statistic__title">658</h3>
+                    <span class="statistic__text">Games Played</span>
                 </li>
             </ul>
             <div class="charts">
-                <div class="d3js-1">
+                <div class="d3-1">
                 </div>
-                <div class="d3js-2" id="venn">
+                <div class="d3-2" id="venn">
                 </div>
-                <div class="d3js-3">
+                <div class="d3-3">
                 </div>
-                <div class="d3js-3">
+                <div class="d3-4">
                     <div id="graph">
-                        <div id="info">
-                            <div id="keys">
-                                <p>
-                                    <span class="key-text">Temperature</span>
-                                    <span class="key" id="temp-key"></span>
-                                </p>
-                                <p>
-                                    <span class="key-text">Rainfall</span>
-                                    <span class="key" id="rain-key"></span>
-                                </p>
-                            </div>
-                            <div id="current-data" class="current-date">
-                                <h2></h2>
-                            </div>
-                        </div>
                     </div>
                 </div>
-                <div class="highcharts-1">
+            </div>
+            <div class="highcharts">
+                <div class="highchart-1">
                     <div id="box"></div>
                 </div>
-                <div class="highcharts-2">
+                <div class="highchart-2">
                     <div id="box2"></div>
                 </div>
-                <div class="highcharts-3">
+                <div class="highchart-3">
                     <div id="box3"></div>
                 </div>
-                <div class="highcharts-4">
+                <div class="highchart-4">
                     <div id="box4"></div>
                 </div>
             </div>
@@ -157,10 +142,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-<script src="js/d3js/d3js-1.js"></script>
-<script src="js/d3js/d3js-2.js"></script>
-<script src="js/d3js/d3js-3.js"></script>
-<script src="js/d3js/d3js-4.js"></script>
+<script src="js/d3js/d3-1.js"></script>
+<script src="js/d3js/d3-2.js"></script>
+<script src="js/d3js/d3-3.js"></script>
+<script src="js/d3js/d3-4.js"></script>
 <script src="js/highcharts/highcharts1.js"></script>
 <script src="js/highcharts/highcharts2.js"></script>
 <script src="js/highcharts/highcharts3.js"></script>

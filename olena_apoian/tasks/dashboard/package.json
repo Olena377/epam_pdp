@@ -1,16 +1,21 @@
 {
-  "name": "dashboard",
-  "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node_modules/.bin/http-server"
-  },
-  "author": "Olena Apoian",
-  "license": "ISC",
-  "dependencies": {
-    "bourbon-neat": "^1.8.0",
-    "http-server": "^0.9.0"
+  "name": "application-name",
+  "version": "0.0.1",
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.0",
+    "gulp-csscomb": "^3.0.6",
+    "gulp-define-module": "^0.1.4",
+    "gulp-gzip": "^1.2.0",
+    "gulp-manifest": "^0.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-requirejs-optimize": "^0.3.1",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-template": "^3.1.0",
+    "gulp-watch": "^4.3.5",
+    "rimraf": "^2.4.4",
+    "bourbon-neat": "^1.8.0"
   }
 }

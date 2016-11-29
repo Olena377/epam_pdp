@@ -51,10 +51,16 @@ body {
 
 .sidebar {
   @include span-columns(3);
+  position: absolute;
+  top: 134px;
+  width: 90px;
   margin-right: 0;
 }
 
 .content {
   @include span-columns(9);
+  position: absolute;
+  top: 134px;
+  left: 90px;
   width: calc(100% - 90px);
 }

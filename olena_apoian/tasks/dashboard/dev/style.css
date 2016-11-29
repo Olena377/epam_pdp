@@ -43,7 +43,6 @@ figcaption,
 figure,
 footer,
 header,
-hgroup,
 main,
 menu,
 nav,
@@ -409,6 +408,7 @@ body {
   min-width: 768px;
   width: 100%;
   height: 100%; }
+
 body::after {
   clear: both;
   content: "";
@@ -420,10 +420,12 @@ body::after {
   display: block;
   margin-right: 2.35765%;
   width: 100%; }
+
 .header::after {
   clear: both;
   content: "";
   display: block; }
+
 .header:last-child {
   margin-right: 0; }
 
@@ -433,6 +435,7 @@ body::after {
   margin-right: 2.35765%;
   width: 23.23176%;
   margin-right: 0; }
+
 .sidebar:last-child {
   margin-right: 0; }
 
@@ -442,6 +445,7 @@ body::after {
   margin-right: 2.35765%;
   width: 74.41059%;
   width: calc(100% - 90px); }
+
 .content:last-child {
   margin-right: 0; }
 
@@ -486,8 +490,10 @@ body::after {
   display: inline-block;
   vertical-align: middle;
   margin: 0 10px; }
+
 .top-navbar__list-item > a {
   display: block; }
+
 .top-navbar__list-item:first-child {
   margin-left: 0; }
 
@@ -568,7 +574,7 @@ body::after {
   width: 50px;
   height: 50px;
   margin: 0 auto;
-  background: url("../../img/icons.png"); }
+  background: url("../../dev/img/icons.png"); }
 
 .sidebar__icon--dashboard {
   background-position: -5px -3px; }
@@ -607,6 +613,7 @@ body::after {
 .content__title {
   font-size: 2.25em;
   font-weight: inherit; }
+
 .content__title:after {
   font-family: FontAwesome;
   font-size: .7em;
@@ -654,6 +661,7 @@ body::after {
   display: inline-block;
   width: 100%;
   margin-top: 50px; }
+
 .d3js-1:first-child,
 .d3js-2:first-child,
 .d3js-3:first-child,
@@ -663,6 +671,7 @@ body::after {
 .highcharts-3:first-child,
 .highcharts-4:first-child {
   margin-top: 0; }
+
 @media screen and (min-width: 960px) {
   .d3js-1,
   .d3js-2,
@@ -673,7 +682,6 @@ body::after {
   .highcharts-3,
   .highcharts-4 {
     width: 45%; } }
-
 .axis path, .axis line {
   fill: none;
   stroke: #777;
@@ -687,6 +695,7 @@ body::after {
 
 .node {
   opacity: 0.5; }
+
 .node:hover {
   opacity: 1; }
 
@@ -720,6 +729,360 @@ body::after {
 
 #info #keys .key-text {
   vertical-align: super; }
+
+#graph .bars line {
+  stroke: #95cddf;
+  stroke-width: 2px; }
+
+#graph .tick line {
+  stroke: #ccc;
+  stroke-width: 1px; }
+
+#graph .axis path {
+  stroke-width: 1px;
+  stroke: #ccc;
+  fill: none; }
+
+#graph path#rain-line {
+  fill: none;
+  stroke: #cc627a;
+  stroke-width: 0.5; }
+
+#graph line#cursor {
+  stroke-width: 1.5px;
+  stroke: #555;
+  fill: none;
+  opacity: 0.7; }
+
+#graph text {
+  fill: #aaa; }
+
+#graph text.label {
+  font-weight: bold;
+  color: #555; }
+
+.current-date {
+  font-size: .625em; }
+
+/*# sourceMappingURL=style.css.map */
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+html {
+  width: 100%; }
+
+body {
+  display: inline-block;
+  position: relative;
+  font-family: 'Nunito', sans-serif;
+  min-width: 1400px; }
+
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0; }
+
+ul {
+  padding: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+body,
+html,
+.wrapper {
+  height: 100%; }
+
+.wrapper {
+  min-width: 1200px; }
+
+body {
+  display: block;
+  min-width: 768px;
+  width: 100%;
+  height: 100%; }
+  body::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.header {
+  display: block;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .header::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .header:last-child {
+    margin-right: 0; }
+
+.sidebar {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  position: absolute;
+  top: 134px;
+  width: 90px;
+  margin-right: 0; }
+  .sidebar:last-child {
+    margin-right: 0; }
+
+.content {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%;
+  position: absolute;
+  top: 134px;
+  left: 90px;
+  width: calc(100% - 90px); }
+  .content:last-child {
+    margin-right: 0; }
+
+/*** DESCRIPTIVE COLORS ***/
+/*** FUNCTIONAL COLORS ***/
+.header {
+  display: table;
+  height: 134px;
+  font-size: 1.2em;
+  background: #35393c;
+  color: #8b959f; }
+
+.header__logo {
+  display: table-cell;
+  width: 90px;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+  background: #1e2226; }
+
+.header__logo-link {
+  display: block;
+  padding: 30px 0; }
+
+.top-navbar {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle; }
+
+.container {
+  position: relative;
+  float: left;
+  width: calc(100% - 390px);
+  padding: 50px 3.5em; }
+
+.top-navbar__list,
+.search {
+  display: inline-block;
+  vertical-align: middle; }
+
+.top-navbar__list-item {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px; }
+  .top-navbar__list-item > a {
+    display: block; }
+  .top-navbar__list-item:first-child {
+    margin-left: 0; }
+
+.top-navbar__list-item:hover,
+.top-navbar__list-item:active {
+  color: #fff; }
+
+.top-navbar__account {
+  text-align: center;
+  float: right;
+  width: 390px;
+  height: 134px;
+  padding: 30px 0;
+  background: #1e2226; }
+
+.top-navbar__details {
+  margin-left: 10px; }
+  .top-navbar__details:hover, .top-navbar__details:active {
+    color: #fff; }
+
+.avatar-box,
+.avatar-box__user-image {
+  display: inline-block;
+  vertical-align: middle; }
+
+.avatar-box {
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0 11px;
+  border-radius: 50%; }
+
+.avatar-box__user-image {
+  position: relative;
+  display: block;
+  border-radius: 50%; }
+
+.search {
+  position: absolute;
+  top: 40px;
+  right: 20px; }
+
+.search__input {
+  width: 300px;
+  height: 50px;
+  background: #4b5055;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #fff;
+  padding-left: 35px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px; }
+
+.search__icon {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  z-index: 1;
+  color: #8b959f;
+  cursor: pointer; }
+
+.search__icon:hover,
+.search__icon:active {
+  color: #fff; }
+
+.sidebar__list-item {
+  margin: 3em 0; }
+
+.sidebar__icon {
+  color: #598B44; }
+
+.sidebar__icon:hover,
+.sidebar__icon:active {
+  color: #32582d; }
+
+.content {
+  color: #8b959f; }
+
+.content__header {
+  padding: 1em 3.5em;
+  background: #fff; }
+
+.content__title {
+  font-size: 2.25em;
+  font-weight: inherit; }
+  .content__title:after {
+    font-family: FontAwesome;
+    font-size: .7em;
+    content: '\f013';
+    margin-left: 10px;
+    color: #c7cbcf;
+    cursor: pointer; }
+
+.content__main {
+  padding: 1.5em 3.5em;
+  background: #f6f6f6; }
+
+.statistic {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.statistic__item {
+  width: 100%;
+  border-left: 4px solid #93c672; }
+
+.statistic__title {
+  padding-left: 10%;
+  font-size: 2em;
+  font-weight: inherit;
+  color: #5d646b; }
+
+.statistic__text {
+  padding-left: 10%;
+  font-size: 1em;
+  color: #c7cbcf; }
+
+.charts,
+.highcharts {
+  display: block;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .charts::after,
+  .highcharts::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .charts:last-child,
+  .highcharts:last-child {
+    margin-right: 0; }
+
+.d3-1,
+.d3-2,
+.d3-3,
+.d3-4,
+.highchart-1,
+.highchart-2,
+.highchart-3,
+.highchart-4 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  .d3-1:last-child,
+  .d3-2:last-child,
+  .d3-3:last-child,
+  .d3-4:last-child,
+  .highchart-1:last-child,
+  .highchart-2:last-child,
+  .highchart-3:last-child,
+  .highchart-4:last-child {
+    margin-right: 0; }
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #777;
+  shape-rendering: crispEdges; }
+
+.tick {
+  stroke-dasharray: 1, 2; }
+
+.bar {
+  fill: FireBrick; }
+
+.node {
+  opacity: 0.5; }
+  .node:hover {
+    opacity: 1; }
+
+.link {
+  stroke: #999;
+  stroke-opacity: 0.3; }
+
+.bars rect {
+  fill: steelblue; }
+
+.axis text {
+  font: 8px sans-serif; }
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges; }
+
+#graph {
+  font-size: 10px;
+  text-transform: uppercase; }
 
 #graph .bars line {
   stroke: #95cddf;
