@@ -19,40 +19,46 @@ const Container = React.createClass({
             city: "Cape Town, RSA",
             nickname: "Killa Kella",
             telephone: "072 143 9920",
-            dateOfBirth: "July 12, 1988",
+            dateOfBirth: "1988-07-12",
             gender: "female",
             image: "../src/img/User.png"
         };
         var user = {
-            name: "Matt Thompson"
+            name: "Matt Thompson",
+            city: "Cape Town, RSA",
+            nickname: "Mettew Perry",
+            telephone: "072 555 9920",
+            dateOfBirth: "1987-07-13",
+            gender: "male",
+            image: "../src/img/User.png"
         };
         var messages1 = [
             {
                 id: uuid.v4(),
                 image: "../src/img/User.png",
-                time: "12:47",
+                time: "2014-09-08T08:02:17-05:00",
                 text: "It goes a little something like this"
             },
             {
                 id: uuid.v4(),
                 image: "../src/img/User.png",
-                time: "12:48",
+                time: "2014-09-08T08:02:17-05:00",
                 text: "It goes a little something like this, something like this"
-            },
+            }
         ];
         var messages2 = [
             {
                 id: uuid.v4(),
                 image: "../src/img/User.png",
-                time: "12:47",
+                time: "2014-09-08T08:02:17-05:00",
                 text: "It goes a little something like this"
             },
             {
                 id: uuid.v4(),
                 image: "../src/img/User.png",
-                time: "12:48",
+                time: "2014-09-08T08:02:17-05:00",
                 text: "It goes a little something like this, something like this"
-            },
+            }
         ];
 
         return (

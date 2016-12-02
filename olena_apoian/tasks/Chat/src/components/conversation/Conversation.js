@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import FileInput from 'react-file-input';
 import EmojiPicker from 'emojione-picker';
+import moment from 'moment';
 
 class Conversation extends React.Component {
     constructor() {
@@ -31,7 +32,7 @@ class Conversation extends React.Component {
                                 <div className="conversation__message" key={message.id}>
                                     <div className="conversation__personal conversation__personal--margin-right">
                                         <img className="conversation__image" src={message.image} alt="User Photo" />
-                                        <time className="conversation__time">{message.time}</time>
+                                        <time className="conversation__time">{moment(message.time).format("hh:mm")}</time>
                                     </div>
                                     <div className="conversation__text conversation__text--left">
                                         <p>{message.text}</p>
@@ -48,7 +49,7 @@ class Conversation extends React.Component {
                                     </div>
                                     <div className="conversation__personal conversation__personal--margin-left">
                                         <img className="conversation__image" src={message.image} alt="User Photo" />
-                                        <time className="conversation__time">{message.time}</time>
+                                        <time className="conversation__time">{moment(message.time).format("hh:mm")}</time>
                                     </div>
                                 </div>
                             )

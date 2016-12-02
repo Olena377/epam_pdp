@@ -1,10 +1,10 @@
-
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import moment from 'moment';
 
 class UserProfile extends React.Component {
     render(){
+        let dateOfBirth = this.props.friend.dateOfBirth;
         return (
             <div className="profile">
                 <div className="profile-settings">
@@ -31,7 +31,7 @@ class UserProfile extends React.Component {
                     </li>
                     <li className="profile-list__item">
                         <h4 className="profile-list__heading">Date Of Birth:</h4>
-                        <span className="profile-list__value">{this.props.friend.dateOfBirth}</span>
+                        <span className="profile-list__value">{moment(this.props.friend.dateOfBirth).format("MMM D, YYYY")}</span>
                     </li>
                     <li className="profile-list__item">
                         <h4 className="profile-list__heading">Gender:</h4>
